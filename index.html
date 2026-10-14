@@ -189,32 +189,84 @@
 
         <!-- Top Header Navigation Bar (Niche Switcher & Global Theme Toggle) -->
         <nav class="w-full mb-4 flex items-center justify-between px-0.5 gap-1.5" aria-label="Controles Principais">
-          <!-- Niche Switcher Pill (Psicologia, Advocacia, Nutrição) -->
-          <div class="inline-flex p-0.5 sm:p-1 bg-white/80 dark:bg-[#16181C]/90 backdrop-blur-md rounded-full border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-colors duration-300 shrink-0">
+          <!-- Niche Switcher Dropdown (Apenas a profissão ativa visível com menu suspenso elegante) -->
+          <div class="relative" id="nicheDropdownContainer">
             <button
               type="button"
-              id="tabPsych"
-              onclick="switchNiche('psychology')"
-              class="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 dark:bg-champagne-500 text-white dark:text-stone-950 shadow-xs"
+              id="nicheDropdownBtn"
+              onclick="toggleNicheDropdown()"
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/85 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] backdrop-blur-md rounded-full border border-stone-200/70 dark:border-stone-700/60 shadow-xs text-xs font-semibold text-graphite-900 dark:text-stone-100 transition-all active:scale-95 cursor-pointer"
+              aria-haspopup="true"
+              aria-expanded="false"
+              title="Alternar Profissão"
             >
-              Psicologia
+              <i data-lucide="brain" id="currentNicheIcon" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400"></i>
+              <span id="currentNicheLabel">Psicologia</span>
+              <i data-lucide="chevron-down" id="nicheChevron" class="w-3.5 h-3.5 text-stone-400 dark:text-stone-500 transition-transform duration-200"></i>
             </button>
-            <button
-              type="button"
-              id="tabLaw"
-              onclick="switchNiche('law')"
-              class="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
+
+            <!-- Dropdown Menu Suspenso -->
+            <div
+              id="nicheDropdownMenu"
+              class="hidden absolute left-0 top-full mt-1.5 w-56 rounded-2xl bg-white/95 dark:bg-[#16181C]/95 backdrop-blur-xl border border-stone-200/90 dark:border-stone-700/80 shadow-xl py-1.5 z-50 transition-all duration-200"
             >
-              Advocacia
-            </button>
-            <button
-              type="button"
-              id="tabNutri"
-              onclick="switchNiche('nutrition')"
-              class="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
-            >
-              Nutrição
-            </button>
+              <div class="px-3.5 py-1 text-[10px] uppercase tracking-wider font-semibold text-stone-400 dark:text-stone-500 border-b border-stone-100 dark:border-white/5 mb-1">
+                Profissões Disponíveis
+              </div>
+              <button
+                type="button"
+                id="itemPsych"
+                onclick="selectNicheFromDropdown('psychology')"
+                class="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-stone-50 dark:hover:bg-white/5 transition-colors text-stone-700 dark:text-stone-200 rounded-xl"
+              >
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-lg bg-sage-100/70 dark:bg-white/10 flex items-center justify-center text-sage-800 dark:text-champagne-300 shrink-0">
+                    <i data-lucide="brain" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-graphite-900 dark:text-stone-100">Psicologia Clínica</p>
+                    <p class="text-[10px] text-stone-500 dark:text-stone-400">Dra. Helena Vasconcellos</p>
+                  </div>
+                </div>
+                <i data-lucide="check" id="checkPsych" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400"></i>
+              </button>
+
+              <button
+                type="button"
+                id="itemLaw"
+                onclick="selectNicheFromDropdown('law')"
+                class="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-stone-50 dark:hover:bg-white/5 transition-colors text-stone-700 dark:text-stone-200 rounded-xl"
+              >
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-lg bg-stone-100 dark:bg-white/10 flex items-center justify-center text-stone-800 dark:text-champagne-300 shrink-0">
+                    <i data-lucide="scale" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-graphite-900 dark:text-stone-100">Advocacia Estratégica</p>
+                    <p class="text-[10px] text-stone-500 dark:text-stone-400">Dra. Camila Siqueira</p>
+                  </div>
+                </div>
+                <i data-lucide="check" id="checkLaw" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400 hidden"></i>
+              </button>
+
+              <button
+                type="button"
+                id="itemNutri"
+                onclick="selectNicheFromDropdown('nutrition')"
+                class="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-stone-50 dark:hover:bg-white/5 transition-colors text-stone-700 dark:text-stone-200 rounded-xl"
+              >
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-lg bg-emerald-100/70 dark:bg-white/10 flex items-center justify-center text-emerald-800 dark:text-champagne-300 shrink-0">
+                    <i data-lucide="apple" class="w-4 h-4"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-graphite-900 dark:text-stone-100">Nutrição & Longevidade</p>
+                    <p class="text-[10px] text-stone-500 dark:text-stone-400">Dra. Larissa Fontana</p>
+                  </div>
+                </div>
+                <i data-lucide="check" id="checkNutri" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400 hidden"></i>
+              </button>
+            </div>
           </div>
 
           <!-- Quick Utility Actions: Dark Mode Toggle, Share, Contact & QR Code -->
@@ -802,8 +854,8 @@
           if (notify) showToast("Modo claro editorial ativado");
         }
 
-        // Atualizar estado das abas de nicho de acordo com o tema
-        updateNicheTabsUI();
+        // Atualizar estado do seletor de nicho de acordo com o tema
+        updateNicheUI();
 
         // Reinicializar ícones
         if (window.lucide) {
@@ -1005,26 +1057,93 @@
       let currentNiche = 'psychology';
 
       // ==========================================
-      // ATUALIZAÇÃO DA ABA DE NICHO (RESPEITA TEMA)
+      // CONTROLE DO MENU SUSPENSO DE PROFISSÕES
       // ==========================================
-      function updateNicheTabsUI() {
-        const tabPsych = document.getElementById('tabPsych');
-        const tabLaw = document.getElementById('tabLaw');
-        const tabNutri = document.getElementById('tabNutri');
-        const isDark = document.documentElement.classList.contains('dark');
+      function toggleNicheDropdown() {
+        const menu = document.getElementById('nicheDropdownMenu');
+        const chevron = document.getElementById('nicheChevron');
+        const btn = document.getElementById('nicheDropdownBtn');
+        if (!menu) return;
 
-        const activeClass = isDark
-          ? "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-champagne-500 text-stone-950 shadow-xs"
-          : "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 text-white shadow-xs";
-
-        const inactiveClass = isDark
-          ? "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-400 hover:text-stone-100"
-          : "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 hover:text-stone-900";
-
-        if (tabPsych) tabPsych.className = currentNiche === 'psychology' ? activeClass : inactiveClass;
-        if (tabLaw) tabLaw.className = currentNiche === 'law' ? activeClass : inactiveClass;
-        if (tabNutri) tabNutri.className = currentNiche === 'nutrition' ? activeClass : inactiveClass;
+        const isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+          menu.classList.remove('hidden');
+          if (chevron) chevron.classList.add('rotate-180');
+          if (btn) btn.setAttribute('aria-expanded', 'true');
+        } else {
+          closeNicheDropdown();
+        }
       }
+
+      function closeNicheDropdown() {
+        const menu = document.getElementById('nicheDropdownMenu');
+        const chevron = document.getElementById('nicheChevron');
+        const btn = document.getElementById('nicheDropdownBtn');
+        if (menu && !menu.classList.contains('hidden')) {
+          menu.classList.add('hidden');
+          if (chevron) chevron.classList.remove('rotate-180');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+
+      function selectNicheFromDropdown(nicheKey) {
+        closeNicheDropdown();
+        switchNiche(nicheKey);
+      }
+
+      function updateNicheUI() {
+        const label = document.getElementById('currentNicheLabel');
+        const icon = document.getElementById('currentNicheIcon');
+        
+        const nicheMeta = {
+          psychology: { label: 'Psicologia', icon: 'brain' },
+          law: { label: 'Advocacia', icon: 'scale' },
+          nutrition: { label: 'Nutrição', icon: 'apple' }
+        };
+
+        const current = nicheMeta[currentNiche] || nicheMeta.psychology;
+        if (label) label.textContent = current.label;
+        if (icon) icon.setAttribute('data-lucide', current.icon);
+
+        // Checkmarks e destaques no menu suspenso
+        const checkPsych = document.getElementById('checkPsych');
+        const checkLaw = document.getElementById('checkLaw');
+        const checkNutri = document.getElementById('checkNutri');
+
+        if (checkPsych) checkPsych.classList.toggle('hidden', currentNiche !== 'psychology');
+        if (checkLaw) checkLaw.classList.toggle('hidden', currentNiche !== 'law');
+        if (checkNutri) checkNutri.classList.toggle('hidden', currentNiche !== 'nutrition');
+
+        const itemPsych = document.getElementById('itemPsych');
+        const itemLaw = document.getElementById('itemLaw');
+        const itemNutri = document.getElementById('itemNutri');
+
+        [
+          { el: itemPsych, key: 'psychology' },
+          { el: itemLaw, key: 'law' },
+          { el: itemNutri, key: 'nutrition' }
+        ].forEach(({ el, key }) => {
+          if (!el) return;
+          if (currentNiche === key) {
+            el.classList.add('bg-stone-100/90', 'dark:bg-white/10');
+          } else {
+            el.classList.remove('bg-stone-100/90', 'dark:bg-white/10');
+          }
+        });
+
+        // Reinicializar ícones
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      // Fechar menu suspenso ao clicar fora
+      document.addEventListener('click', function(event) {
+        const container = document.getElementById('nicheDropdownContainer');
+        if (container && !container.contains(event.target)) {
+          closeNicheDropdown();
+        }
+      });
 
       // ==========================================
       // RENDERIZAR PERFIL ATIVO
@@ -1147,7 +1266,7 @@
           ctaCard.href = `https://wa.me/${data.whatsapp}?text=${encodeURIComponent("Olá, " + data.name + "! Gostaria de informações sobre agendamento de consulta.")}`;
         }
 
-        updateNicheTabsUI();
+        updateNicheUI();
 
         // Reinicializar ícones Lucide
         if (window.lucide) {
