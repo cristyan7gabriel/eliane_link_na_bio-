@@ -79,7 +79,7 @@ Todos os dados dos perfis estão concentrados no objeto `PROFILES` dentro do `<s
 ## ✨ Recursos Inclusos
 
 - [x] **Seletor de Tema Claro / Escuro Global**: Paleta creme/sálvia no modo claro e obsidiana/champagne no modo noturno com alto contraste.
-- [x] **Alternância de Perfis (Psicologia Clínica & Advocacia)**: Modelo flexível para múltiplos nichos liberais.
+- [x] **Alternância de Perfis de Alto Padrão (Psicologia Clínica, Advocacia & Nutrição)**: Modelos flexíveis para múltiplos nichos liberais.
 - [x] **Agendamento Inteligente via WhatsApp**: Modal interativo com pré-seleção de modalidade e turno preferido.
 - [x] **Chave Pix com Cópia Rápida**: Feedback visual instantâneo, alteração de estado do botão e vibração tátil (*haptics* no celular).
 - [x] **Localização com Google Maps**: Botão direto "Como Chegar" e cópia de endereço.

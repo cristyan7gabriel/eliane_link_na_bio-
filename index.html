@@ -189,13 +189,13 @@
 
         <!-- Top Header Navigation Bar (Niche Switcher & Global Theme Toggle) -->
         <nav class="w-full mb-4 flex items-center justify-between px-0.5 gap-1.5" aria-label="Controles Principais">
-          <!-- Niche Switcher Pill -->
+          <!-- Niche Switcher Pill (Psicologia, Advocacia, Nutrição) -->
           <div class="inline-flex p-0.5 sm:p-1 bg-white/80 dark:bg-[#16181C]/90 backdrop-blur-md rounded-full border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-colors duration-300 shrink-0">
             <button
               type="button"
               id="tabPsych"
               onclick="switchNiche('psychology')"
-              class="px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 dark:bg-champagne-500 text-white dark:text-stone-950 shadow-xs"
+              class="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 dark:bg-champagne-500 text-white dark:text-stone-950 shadow-xs"
             >
               Psicologia
             </button>
@@ -203,9 +203,17 @@
               type="button"
               id="tabLaw"
               onclick="switchNiche('law')"
-              class="px-2.5 sm:px-3 py-1 text-[11px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
+              class="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
             >
               Advocacia
+            </button>
+            <button
+              type="button"
+              id="tabNutri"
+              onclick="switchNiche('nutrition')"
+              class="px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
+            >
+              Nutrição
             </button>
           </div>
 
@@ -278,6 +286,7 @@
                   alt="Foto de perfil profissional"
                   class="w-24 h-24 sm:w-28 sm:h-28 aspect-square object-cover object-center rounded-full ring-1 ring-stone-200/60 dark:ring-stone-700/60 transition-transform duration-300 group-hover:scale-[1.02]"
                   loading="eager"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&h=500&q=85&crop=faces';"
                 />
               </div>
 
@@ -930,6 +939,66 @@
           ethicsTitle: "Sigilo & Governança Jurídica",
           ethicsText: "Atuação regida pelo Código de Ética e Disciplina da OAB. Garantia absoluta de inviolabilidade de comunicações e sigilo profissional estrito para todos os clientes e operações.",
           footer: "Dra. Camila Siqueira · Advocacia & Consultoria Estratégica (OAB/SP 384.219)"
+        },
+        nutrition: {
+          name: "Dra. Larissa Fontana",
+          title: "Nutrição Clínica & Longevidade",
+          registry: "CRN-3 48.912 · Pós-Graduada pela USP & FMUSP",
+          bio: "Nutrição funcional e medicina do estilo de vida. Protocolos individualizados de saúde metabólica, modulação intestinal e longevidade ativa para alta performance física e mental.",
+          avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&h=500&q=85&crop=faces",
+          status: "Agenda Aberta · Atendimento Presencial e Online",
+          whatsapp: "5511998765432",
+          email: "contato@dralarissafontana.com.br",
+          pixKey: "pix@dralarissafontana.com.br",
+          bank: "Banco Santander · Larissa Fontana Nutrição",
+          address: "Vila Olímpia Corporate · Rua Funchal, 418 — Conj. 82",
+          addressMapQuery: "Rua+Funchal,+418+-+Vila+Olímpia,+São+Paulo+-+SP",
+          district: "Vila Olímpia · SP",
+          neighborhoodNotes: "Edifício AAA com valet e café orgânico no lobby · A 400m da Estação Vila Olímpia",
+          accentColor: "sage",
+          aboutHeader: "Sobre Mim & Formação em Nutrição",
+          aboutSubtitle: "11+ anos em nutrição clínica funcional e integrativa",
+          aboutTexts: [
+            "Graduada em Nutrição pela <strong>Universidade de São Paulo (USP)</strong>, com especialização em Nutrição Clínica Funcional e mestrado em Ciências da Saúde pela <strong>Faculdade de Medicina da USP (FMUSP)</strong>.",
+            "Minha conduta clínica prioriza a reprogramação metabólica sustentável, o emagrecimento consciente sem dietas punitivas, a restauração da barreira intestinal e a nutrição de precisão adaptada à sua rotina profissional."
+          ],
+          metrics: [
+            { title: "3.500+ Pacientes", subtitle: "Acompanhados com sucesso" },
+            { title: "Bioimpedância InBody", subtitle: "Avaliação corporal avançada" }
+          ],
+          services: [
+            {
+              title: "Consulta Nutricional Individualizada",
+              description: "Rastreamento metabólico, bioimpedância e plano alimentar 100% sob medida",
+              icon: "apple",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Consulta%20Nutricional.",
+              badge: "Mais Buscado"
+            },
+            {
+              title: "Protocolo Longevidade & Saúde Intestinal",
+              description: "Modulação da microbiota, redução de inflamação e equilíbrio hormonal",
+              icon: "sparkles",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Protocolo%20de%20Sa%C3%BAde%20Intestinal%20e%20Longevidade.",
+              badge: "Exclusivo"
+            },
+            {
+              title: "E-book: Receitas Funcionais de Alta Densidade",
+              description: "Guia prático com 60 preparações anti-inflamatórias rápidas para o dia a dia",
+              icon: "book-open",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20adquirir%20o%20Guia%20de%20Receitas%20Funcionais.",
+              badge: "Guia Digital"
+            },
+            {
+              title: "Coluna de Nutrição Integrativa",
+              description: "Ensaios sobre crononutrição, sono reparador e suplementação inteligente",
+              icon: "newspaper",
+              link: "https://medium.com",
+              badge: "Artigos"
+            }
+          ],
+          ethicsTitle: "Compromisso Ético & Individualidade Bioquímica",
+          ethicsText: "Atendimento estritamente regulamentado pelo Código de Ética do Nutricionista (CFN). Respeito à sua singularidade, preferências gastronômicas, exames laboratoriais e metas de saúde.",
+          footer: "Dra. Larissa Fontana · Nutrição Clínica & Funcional (CRN-3 48.912)"
         }
       };
 
@@ -941,25 +1010,20 @@
       function updateNicheTabsUI() {
         const tabPsych = document.getElementById('tabPsych');
         const tabLaw = document.getElementById('tabLaw');
+        const tabNutri = document.getElementById('tabNutri');
         const isDark = document.documentElement.classList.contains('dark');
 
-        if (currentNiche === 'psychology') {
-          if (isDark) {
-            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-champagne-500 text-stone-950 shadow-xs";
-            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-400 hover:text-stone-100";
-          } else {
-            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 text-white shadow-xs";
-            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 hover:text-stone-900";
-          }
-        } else {
-          if (isDark) {
-            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-champagne-500 text-stone-950 shadow-xs";
-            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-400 hover:text-stone-100";
-          } else {
-            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 text-white shadow-xs";
-            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 hover:text-stone-900";
-          }
-        }
+        const activeClass = isDark
+          ? "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-champagne-500 text-stone-950 shadow-xs"
+          : "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 text-white shadow-xs";
+
+        const inactiveClass = isDark
+          ? "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-400 hover:text-stone-100"
+          : "px-2 sm:px-3 py-1 text-[10px] sm:text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 hover:text-stone-900";
+
+        if (tabPsych) tabPsych.className = currentNiche === 'psychology' ? activeClass : inactiveClass;
+        if (tabLaw) tabLaw.className = currentNiche === 'law' ? activeClass : inactiveClass;
+        if (tabNutri) tabNutri.className = currentNiche === 'nutrition' ? activeClass : inactiveClass;
       }
 
       // ==========================================
@@ -1047,11 +1111,35 @@
         // Atualizar QR Code URL
         document.getElementById('qrCodeImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(window.location.href)}&color=1a1b1c&bgcolor=ffffff`;
 
-        // Detalhes CTA
+        // Detalhes CTA e Modalidades
+        const modalitySelect = document.getElementById('bookingModality');
         if (nicheKey === 'psychology') {
           document.getElementById('ctaDetails').textContent = "Atendimento online ou presencial nos Jardins";
-        } else {
+          if (modalitySelect) {
+            modalitySelect.innerHTML = `
+              <option value="Psicoterapia Online">Psicoterapia Online</option>
+              <option value="Presencial nos Jardins">Atendimento Presencial nos Jardins (SP)</option>
+              <option value="Protocolo Ansiedade & Burnout">Protocolo Ansiedade & Burnout</option>
+            `;
+          }
+        } else if (nicheKey === 'law') {
           document.getElementById('ctaDetails').textContent = "Reunião de alinhamento estratégico via WhatsApp";
+          if (modalitySelect) {
+            modalitySelect.innerHTML = `
+              <option value="Consultoria Societária">Consultoria Societária & M&A</option>
+              <option value="Planejamento Patrimonial">Planejamento Sucessório & Patrimonial</option>
+              <option value="Parecer Jurídico">Parecer Jurídico & Compliance</option>
+            `;
+          }
+        } else {
+          document.getElementById('ctaDetails').textContent = "Consulta presencial na Vila Olímpia ou online";
+          if (modalitySelect) {
+            modalitySelect.innerHTML = `
+              <option value="Consulta Nutricional Online">Consulta Nutricional Online</option>
+              <option value="Presencial Vila Olímpia">Atendimento Presencial na Vila Olímpia (SP)</option>
+              <option value="Protocolo Longevidade & Intestino">Protocolo Longevidade & Saúde Intestinal</option>
+            `;
+          }
         }
 
         const ctaCard = document.getElementById('mainCtaCard');
@@ -1069,7 +1157,12 @@
 
       function switchNiche(nicheKey) {
         renderProfile(nicheKey);
-        showToast(`Exibindo perfil: ${nicheKey === 'psychology' ? 'Psicologia Clínica' : 'Advocacia Estratégica'}`);
+        const labels = {
+          psychology: 'Psicologia Clínica',
+          law: 'Advocacia Estratégica',
+          nutrition: 'Nutrição Clínica & Longevidade'
+        };
+        showToast(`Exibindo perfil: ${labels[nicheKey] || nicheKey}`);
       }
 
       // ==========================================
