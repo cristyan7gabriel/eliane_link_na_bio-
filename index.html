@@ -1,0 +1,1220 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Dra. Helena Vasconcellos | Bio & Links Profissionais</title>
+    <meta
+      name="description"
+      content="Centralizador de links e bio profissional de alto padrão para profissionais liberais (Psicologia Clínica CRP e Advocacia OAB). Agendamentos, consultas, localização e Pix."
+    />
+    <meta property="og:title" content="Dra. Helena Vasconcellos | Bio & Links Profissionais" />
+    <meta
+      property="og:description"
+      content="Alternativa de alto padrão ao Linktree: agendamento direto no WhatsApp, serviços especializados, sobre e localização do consultório."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Cormorant Garamond (editorial luxury) & Plus Jakarta Sans (clean modern sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS via CDN with darkMode: 'class' -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              cream: {
+                50: '#FAF8F5',
+                100: '#F5F0E8',
+                200: '#EAE1D3',
+                300: '#DED1BD',
+              },
+              champagne: {
+                50: '#FDFBF7',
+                100: '#F9F4EA',
+                200: '#F1E6CD',
+                300: '#E5D1A4',
+                400: '#D6B875',
+                500: '#C19B4C',
+                600: '#A88236',
+                700: '#876625',
+              },
+              sage: {
+                50: '#F4F7F5',
+                100: '#E3ECE6',
+                200: '#C5D7CC',
+                500: '#52796F',
+                600: '#3D5A52',
+                700: '#2C423C',
+                800: '#1F2F2B',
+                900: '#15211E',
+              },
+              navy: {
+                800: '#1E2530',
+                900: '#141A24',
+                950: '#0D1117',
+              },
+              graphite: {
+                700: '#3A3B3C',
+                800: '#272829',
+                900: '#1A1B1C',
+                950: '#111213',
+              },
+              obsidian: {
+                800: '#1E2024',
+                850: '#17191C',
+                900: '#121316',
+                950: '#0C0D0E',
+              },
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            },
+            keyframes: {
+              subtlePulse: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 8px 24px -4px rgba(61, 90, 82, 0.25)' },
+                '50%': { transform: 'scale(1.012)', boxShadow: '0 14px 28px -4px rgba(61, 90, 82, 0.38)' },
+              },
+              subtlePulseDark: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 8px 24px -4px rgba(82, 121, 111, 0.2)' },
+                '50%': { transform: 'scale(1.012)', boxShadow: '0 14px 30px -4px rgba(193, 155, 76, 0.3)' },
+              },
+              shimmer: {
+                '0%': { transform: 'translateX(-100%)' },
+                '100%': { transform: 'translateX(250%)' },
+              },
+            },
+            animation: {
+              'subtle-pulse': 'subtlePulse 3.8s ease-in-out infinite',
+              'subtle-pulse-dark': 'subtlePulseDark 3.8s ease-in-out infinite',
+              shimmer: 'shimmer 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Lucide Icons via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      /* Smooth behavior and typography refinements */
+      html {
+        scroll-behavior: smooth;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+        background-color: #FAF8F5;
+        color: #272829;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .font-serif-luxury {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+      }
+
+      /* High-end glassmorphism for Light Mode */
+      .glass-card {
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border: 1px solid rgba(222, 209, 189, 0.55);
+        transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .glass-card:hover {
+        background: rgba(255, 255, 255, 0.98);
+        border-color: rgba(193, 155, 76, 0.45);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px -5px rgba(28, 29, 28, 0.05);
+      }
+      .glass-card:active {
+        transform: translateY(0) scale(0.995);
+      }
+
+      /* High-end glassmorphism for Dark Mode */
+      .dark body {
+        background-color: #0C0D0E;
+        color: #FAF8F5;
+      }
+      .dark .glass-card {
+        background: rgba(20, 22, 26, 0.82);
+        border: 1px solid rgba(214, 184, 117, 0.16);
+        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+      }
+      .dark .glass-card:hover {
+        background: rgba(26, 29, 34, 0.95);
+        border-color: rgba(214, 184, 117, 0.45);
+        box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.6), 0 0 15px -3px rgba(193, 155, 76, 0.12);
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 4px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #DED1BD;
+        border-radius: 999px;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #3A3B3C;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[#FAF8F5] dark:bg-[#0C0D0E] text-graphite-800 dark:text-stone-100 antialiased selection:bg-champagne-200 selection:text-graphite-900 pb-16 transition-colors duration-300">
+    <!-- Ambient Organic Lighting (Warm Cream & Sage in Light, Deep Gold & Forest Obsidian in Dark) -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+      <div id="ambientGlowTop" class="absolute -top-36 left-1/2 -translate-x-1/2 w-[580px] h-[580px] bg-gradient-to-b from-champagne-200/40 via-cream-200/25 to-transparent dark:from-champagne-500/10 dark:via-champagne-700/5 dark:to-transparent rounded-full blur-3xl transition-colors duration-700"></div>
+      <div id="ambientGlowMid" class="absolute top-[40%] -right-28 w-88 h-88 bg-sage-100/40 dark:bg-sage-900/15 rounded-full blur-3xl transition-colors duration-700"></div>
+      <div id="ambientGlowBottom" class="absolute bottom-12 -left-28 w-80 h-80 bg-champagne-100/45 dark:bg-obsidian-850/40 rounded-full blur-3xl transition-colors duration-700"></div>
+    </div>
+
+    <!-- Outer Wrapper (Centers mobile card on desktop, natural full fit on mobile) -->
+    <div class="relative z-10 w-full min-h-screen flex flex-col items-center px-4 py-6 sm:py-10">
+      
+      <!-- Top Header Navigation Bar (Niche Switcher & Global Theme Toggle) -->
+      <nav class="w-full max-w-[430px] mb-4 flex items-center justify-between px-1" aria-label="Controles Principais">
+        <!-- Niche Switcher Pill -->
+        <div class="inline-flex p-1 bg-white/80 dark:bg-[#16181C]/90 backdrop-blur-md rounded-full border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-colors duration-300">
+          <button
+            type="button"
+            id="tabPsych"
+            onclick="switchNiche('psychology')"
+            class="px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 dark:bg-champagne-500 text-white dark:text-stone-950 shadow-xs"
+          >
+            Psicologia
+          </button>
+          <button
+            type="button"
+            id="tabLaw"
+            onclick="switchNiche('law')"
+            class="px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100"
+          >
+            Advocacia
+          </button>
+        </div>
+
+        <!-- Quick Utility Actions: Dark Mode Toggle, Share, Contact & QR Code -->
+        <div class="flex items-center gap-1.5">
+          <!-- SELETOR DE TEMA CLARO / ESCURO GLOBAL -->
+          <button
+            type="button"
+            id="themeToggleBtn"
+            onclick="toggleTheme()"
+            title="Alternar Modo Claro / Noturno"
+            class="p-2 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95 flex items-center justify-center"
+            aria-label="Alternar Tema Claro / Escuro"
+          >
+            <i data-lucide="moon" id="themeIcon" class="w-4 h-4 transition-transform duration-300"></i>
+          </button>
+
+          <button
+            type="button"
+            onclick="shareProfile()"
+            title="Compartilhar Bio"
+            class="p-2 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95"
+            aria-label="Compartilhar Perfil"
+          >
+            <i data-lucide="share-2" class="w-4 h-4"></i>
+          </button>
+          <button
+            type="button"
+            onclick="downloadVCard()"
+            title="Salvar Contato na Agenda"
+            class="p-2 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95"
+            aria-label="Salvar na Agenda"
+          >
+            <i data-lucide="user-plus" class="w-4 h-4"></i>
+          </button>
+          <button
+            type="button"
+            onclick="toggleQRModal(true)"
+            title="Exibir QR Code"
+            class="p-2 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95"
+            aria-label="Exibir QR Code"
+          >
+            <i data-lucide="qr-code" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Main Mobile Card Container -->
+      <main class="w-full max-w-[430px] flex flex-col items-center">
+        
+        <!-- Status Indicator Pill -->
+        <div class="w-full flex items-center justify-center mb-3">
+          <div class="inline-flex items-center gap-2 text-[11px] font-medium tracking-wide text-stone-600 dark:text-stone-300 bg-white/80 dark:bg-[#16181C]/90 backdrop-blur-md border border-stone-200/60 dark:border-stone-700/60 px-3.5 py-1 rounded-full shadow-xs transition-colors duration-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span id="profileStatus">Agenda Aberta · Atendimento Online e Presencial</span>
+          </div>
+        </div>
+
+        <!-- 1. PERFIL / TOPO -->
+        <header class="w-full flex flex-col items-center text-center mt-1 mb-6">
+          <!-- Profile Avatar with refined luxury double ring and subtle shimmer -->
+          <div class="relative group cursor-pointer" onclick="toggleAboutAccordion(true)">
+            <!-- Outer gold ring accent -->
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-champagne-400 via-champagne-200 to-sage-500 dark:from-champagne-500 dark:via-champagne-300 dark:to-emerald-600 opacity-60 blur-xs group-hover:opacity-100 transition duration-500"></div>
+            
+            <div class="relative p-1 rounded-full bg-white dark:bg-[#16181C] shadow-md transition-colors duration-300">
+              <img
+                id="profileAvatar"
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=480&q=85"
+                alt="Foto de perfil profissional"
+                class="w-24 h-24 object-cover object-top rounded-full ring-1 ring-stone-200/60 dark:ring-stone-700/60 transition-transform duration-300 group-hover:scale-[1.02]"
+                loading="eager"
+              />
+            </div>
+
+            <!-- Subtle Verification Badge -->
+            <span
+              id="verificationBadge"
+              class="absolute bottom-1 right-1 bg-champagne-500 dark:bg-champagne-600 text-white p-1 rounded-full shadow-md border-2 border-white dark:border-[#16181C] flex items-center justify-center hover:scale-110 transition-transform"
+              title="Profissional Verificada"
+            >
+              <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+            </span>
+          </div>
+
+          <!-- Professional Name & Headline -->
+          <div class="mt-3.5 space-y-0.5">
+            <h1 id="profileName" class="font-serif-luxury text-2xl sm:text-[26px] font-bold tracking-tight text-graphite-900 dark:text-stone-50 leading-tight transition-colors">
+              Dra. Helena Vasconcellos
+            </h1>
+            
+            <p id="profileSpecialty" class="text-xs uppercase tracking-widest text-champagne-700 dark:text-champagne-300 font-semibold pt-0.5 transition-colors">
+              Psicóloga Clínica & Psicoterapeuta
+            </p>
+            
+            <!-- Professional Registry & Credentials -->
+            <div id="profileRegistry" class="flex items-center justify-center gap-2 text-[11px] text-stone-500 dark:text-stone-400 font-medium pt-0.5 transition-colors">
+              <span>CRP 06/142980</span>
+              <span aria-hidden="true" class="text-stone-300 dark:text-stone-600">·</span>
+              <span>Mestre em Psicologia (USP)</span>
+            </div>
+          </div>
+
+          <!-- Mini Bio / Value Proposition (1-2 sentences) -->
+          <p id="profileBio" class="mt-3 text-xs leading-relaxed text-stone-600 dark:text-stone-300 max-w-[340px] font-normal px-2 transition-colors">
+            Acolhimento empático e psicoterapia fundamentada em evidências científicas para manejo de ansiedade, regulação emocional e autodesenvolvimento de alta performance.
+          </p>
+
+          <!-- Social Media Icons (High-end and minimal) -->
+          <div class="flex items-center justify-center gap-2.5 mt-4">
+            <a
+              id="socialInstagram"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-champagne-600 dark:hover:text-champagne-300 hover:border-champagne-300 dark:hover:border-champagne-500/50 hover:scale-105 transition-all"
+              aria-label="Instagram"
+            >
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+            </a>
+            <a
+              id="socialLinkedIn"
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-champagne-600 dark:hover:text-champagne-300 hover:border-champagne-300 dark:hover:border-champagne-500/50 hover:scale-105 transition-all"
+              aria-label="LinkedIn"
+            >
+              <i data-lucide="linkedin" class="w-4 h-4"></i>
+            </a>
+            <a
+              id="socialYoutube"
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-champagne-600 dark:hover:text-champagne-300 hover:border-champagne-300 dark:hover:border-champagne-500/50 hover:scale-105 transition-all"
+              aria-label="YouTube"
+            >
+              <i data-lucide="youtube" class="w-4 h-4"></i>
+            </a>
+            <a
+              id="socialEmail"
+              href="mailto:contato@drahelenavasconcellos.com.br"
+              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-champagne-600 dark:hover:text-champagne-300 hover:border-champagne-300 dark:hover:border-champagne-500/50 hover:scale-105 transition-all"
+              aria-label="E-mail"
+            >
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </a>
+            <a
+              id="socialMediaExtra"
+              href="https://spotify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-champagne-600 dark:hover:text-champagne-300 hover:border-champagne-300 dark:hover:border-champagne-500/50 hover:scale-105 transition-all"
+              aria-label="Podcast / Conteúdo de Áudio"
+            >
+              <i data-lucide="headphones" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </header>
+
+        <!-- 2. CHAMADA PRINCIPAL (DESTAQUE COM ANIMAÇÃO SUAVE) -->
+        <section class="w-full mb-5" aria-label="Ação Principal de Agendamento">
+          <div
+            id="mainCtaCard"
+            class="relative overflow-hidden group block w-full p-4 rounded-2xl bg-gradient-to-r from-sage-800 via-sage-700 to-sage-800 dark:from-[#172722] dark:via-[#213830] dark:to-[#172722] text-white shadow-lg shadow-sage-900/15 dark:shadow-black/50 animate-subtle-pulse border border-sage-600/40 dark:border-emerald-500/30 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]"
+          >
+            <!-- Animated gentle light shimmer -->
+            <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 dark:via-white/10 to-transparent animate-shimmer pointer-events-none"></div>
+
+            <div class="relative z-10 flex items-center justify-between">
+              <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 rounded-xl bg-white/10 dark:bg-emerald-400/10 flex items-center justify-center text-emerald-300 dark:text-emerald-400 border border-white/20 dark:border-emerald-500/30 group-hover:bg-white/20 transition-all shrink-0">
+                  <i data-lucide="message-circle" class="w-6 h-6"></i>
+                </div>
+                <div class="text-left">
+                  <span id="ctaSubtitle" class="block text-[10px] font-semibold uppercase tracking-widest text-champagne-300">
+                    Atendimento Imediato
+                  </span>
+                  <span id="ctaTitle" class="font-serif-luxury text-lg sm:text-[19px] font-bold leading-tight block text-white">
+                    Falar Diretamente no WhatsApp
+                  </span>
+                  <span id="ctaDetails" class="block text-[11px] text-sage-100 dark:text-stone-300 font-light mt-0.5">
+                    Agendamento de consultas e esclarecimento de dúvidas
+                  </span>
+                </div>
+              </div>
+              <div class="flex items-center gap-1">
+                <button
+                  type="button"
+                  onclick="openBookingModal()"
+                  class="px-2.5 py-1.5 rounded-lg bg-white/15 dark:bg-white/10 hover:bg-white/25 dark:hover:bg-white/20 text-white text-[11px] font-medium border border-white/20 dark:border-white/10 transition-all flex items-center gap-1 active:scale-95"
+                  title="Personalizar mensagem de agendamento"
+                >
+                  <span>Agendar</span>
+                  <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. SEÇÃO DE LINKS E SERVIÇOS -->
+        <section class="w-full space-y-3 mb-5" aria-label="Serviços e Links Especializados">
+          <div class="flex items-center justify-between px-1 mb-1">
+            <h2 class="text-[11px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
+              Serviços & Atendimentos
+            </h2>
+            <span class="text-[11px] text-stone-400 dark:text-stone-500">Modalidades</span>
+          </div>
+
+          <div id="servicesContainer" class="space-y-3">
+            <!-- Dynamically populated via JavaScript for seamless niche switching & theme support -->
+          </div>
+        </section>
+
+        <!-- 4. RECURSOS EXTRAS DIFERENCIADOS -->
+        <section class="w-full space-y-3 mb-6" aria-label="Informações Adicionais">
+          <div class="flex items-center justify-between px-1 mb-1">
+            <h2 class="text-[11px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
+              Conheça Mais
+            </h2>
+            <span class="text-[11px] text-stone-400 dark:text-stone-500">Sobre & Consultório</span>
+          </div>
+
+          <!-- 4.1 Mini Seção Sobre (Card Retrátil / Sanfona Rápida) -->
+          <div class="glass-card rounded-2xl overflow-hidden shadow-xs border border-stone-200/80 dark:border-stone-800 transition-colors">
+            <button
+              type="button"
+              onclick="toggleAboutAccordion()"
+              class="w-full p-3.5 flex items-center justify-between text-left hover:bg-stone-50/70 dark:hover:bg-white/5 transition-colors"
+              id="accordionAboutBtn"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-champagne-50 dark:bg-white/5 border border-champagne-200/80 dark:border-white/10 text-champagne-700 dark:text-champagne-300 flex items-center justify-center shrink-0">
+                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 id="aboutHeaderTitle" class="font-serif-luxury text-base font-bold text-graphite-900 dark:text-stone-100">
+                    Sobre Mim & Trajetória
+                  </h3>
+                  <p id="aboutHeaderSubtitle" class="text-[11px] text-stone-500 dark:text-stone-400">
+                    Formação acadêmica, abordagem e diferenciais
+                  </p>
+                </div>
+              </div>
+              <div class="w-6 h-6 rounded-full bg-stone-100 dark:bg-white/10 flex items-center justify-center text-stone-500 dark:text-stone-300 transition-transform duration-300" id="accordionArrow">
+                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              </div>
+            </button>
+
+            <!-- Expanded Content -->
+            <div id="aboutContent" class="hidden px-4 pb-4 pt-1 text-xs text-stone-600 dark:text-stone-300 space-y-2.5 border-t border-stone-100/80 dark:border-stone-800">
+              <div id="aboutTextDetails" class="space-y-2 leading-relaxed">
+                <!-- Injected via JS -->
+              </div>
+              
+              <!-- Metrics / Credentials Badges -->
+              <div id="aboutMetrics" class="grid grid-cols-2 gap-2 pt-1 text-[11px]">
+                <!-- Injected via JS -->
+              </div>
+            </div>
+          </div>
+
+          <!-- 4.2 Localização / Consultório Presencial com Google Maps -->
+          <div class="glass-card rounded-2xl p-4 shadow-xs border border-stone-200/80 dark:border-stone-800 relative overflow-hidden transition-colors">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-sage-50 dark:bg-white/5 text-sage-700 dark:text-sage-200 border border-sage-200/80 dark:border-white/10 flex items-center justify-center shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div class="flex-1 text-left">
+                <div class="flex items-center justify-between">
+                  <h3 id="officeTitle" class="font-serif-luxury text-base font-bold text-graphite-900 dark:text-stone-100">
+                    Consultório Presencial
+                  </h3>
+                  <span id="officeDistrict" class="text-[10px] uppercase font-semibold tracking-wider text-sage-700 dark:text-champagne-300 bg-sage-50 dark:bg-white/5 px-2 py-0.5 rounded-md border border-sage-200/60 dark:border-white/10">
+                    Jardins · SP
+                  </span>
+                </div>
+                <p id="officeAddress" class="text-xs text-stone-600 dark:text-stone-300 mt-1 leading-snug">
+                  Edifício Infinity Jardins · Alameda Santos, 1800 — Conj. 142
+                </p>
+                <p id="officeNotes" class="text-[11px] text-stone-400 dark:text-stone-400 mt-0.5">
+                  A 300m da Estação Trianon-Masp · Estacionamento com manobrista no local
+                </p>
+
+                <!-- Actions: Como Chegar e Copiar Endereço -->
+                <div class="mt-3 flex flex-wrap items-center gap-2">
+                  <a
+                    id="mapsLink"
+                    href="https://maps.google.com/?q=Alameda+Santos,+1800+-+Cerqueira+C%C3%A9sar,+S%C3%A3o+Paulo+-+SP"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-stone-900 dark:bg-champagne-500 hover:bg-stone-800 dark:hover:bg-champagne-400 text-white dark:text-stone-950 text-xs font-semibold shadow-xs transition-all active:scale-95"
+                  >
+                    <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+                    <span>Como Chegar (Google Maps)</span>
+                  </a>
+                  <button
+                    type="button"
+                    onclick="copyAddress()"
+                    id="copyAddressBtn"
+                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-white/5 hover:bg-stone-50 dark:hover:bg-white/10 border border-stone-200 dark:border-stone-700 text-stone-700 dark:text-stone-200 text-xs font-medium transition-all active:scale-95"
+                  >
+                    <i data-lucide="copy" class="w-3.5 h-3.5" id="copyAddressIcon"></i>
+                    <span id="copyAddressText">Copiar Endereço</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4.3 Chave Pix Rápida com Feedback Instantâneo -->
+          <div class="glass-card rounded-2xl p-4 shadow-xs border border-champagne-200/70 dark:border-champagne-500/20 bg-gradient-to-br from-white via-white to-champagne-50/40 dark:from-[#16181C] dark:via-[#16181C] dark:to-[#1E1B15] transition-colors">
+            <div class="flex items-center justify-between mb-2">
+              <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-lg bg-champagne-100 dark:bg-champagne-500/15 text-champagne-700 dark:text-champagne-300 flex items-center justify-center border border-champagne-200 dark:border-champagne-500/30">
+                  <i data-lucide="wallet" class="w-4 h-4"></i>
+                </div>
+                <span class="text-xs font-semibold text-graphite-900 dark:text-stone-100">
+                  Chave Pix para Honorários & Consultas
+                </span>
+              </div>
+              <span id="pixBankName" class="text-[10px] font-medium text-stone-400 dark:text-stone-400">Banco C6 · Titular</span>
+            </div>
+
+            <div class="p-2.5 rounded-xl bg-stone-50/90 dark:bg-black/30 border border-stone-200/80 dark:border-stone-800 flex items-center justify-between gap-2">
+              <div class="truncate text-left">
+                <span class="block text-[10px] text-stone-400 dark:text-stone-400 font-medium uppercase tracking-wider">Chave Pix:</span>
+                <span class="font-mono text-xs text-graphite-800 dark:text-champagne-200 font-semibold select-all" id="pixKeyText">
+                  pix@drahelenavasconcellos.com.br
+                </span>
+              </div>
+              <button
+                type="button"
+                id="copyPixBtn"
+                onclick="copyPixKey()"
+                class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-champagne-500 hover:bg-champagne-600 dark:bg-champagne-500 dark:hover:bg-champagne-400 active:scale-95 text-white dark:text-stone-950 text-xs font-semibold shadow-xs transition-all"
+              >
+                <i data-lucide="copy" class="w-3.5 h-3.5" id="pixCopyIcon"></i>
+                <span id="pixCopyBtnText">Copiar</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Selo de Ética e Privacidade Profissional -->
+        <section class="w-full glass-card rounded-2xl p-4 shadow-xs border border-stone-200/70 dark:border-stone-800 mb-6 text-left transition-colors">
+          <div class="flex items-center gap-2 mb-1.5 text-champagne-600 dark:text-champagne-300">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span id="ethicsHeader" class="text-xs font-bold tracking-wide uppercase text-graphite-800 dark:text-stone-100">
+              Compromisso Ético & Sigilo Profissional
+            </span>
+          </div>
+          <p id="ethicsText" class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed">
+            Atendimento em conformidade com o Código de Ética Profissional. Ambiente clínico seguro, com sigilo rigoroso e plataformas certificadas com criptografia de ponta a ponta.
+          </p>
+        </section>
+
+        <!-- Footer com Informações Legais -->
+        <footer class="w-full text-center text-stone-400 dark:text-stone-500 text-[11px] space-y-1.5 pt-2 border-t border-stone-200/50 dark:border-stone-800 transition-colors">
+          <p id="footerTitle" class="font-medium text-stone-600 dark:text-stone-300">
+            Dra. Helena Vasconcellos · Psicologia Clínica
+          </p>
+          <p id="footerRegistry">
+            CRP 06/142980 · São Paulo - SP
+          </p>
+          <p class="text-[10px] text-stone-400 dark:text-stone-500 pt-1">
+            Bio Profissional de Alto Padrão · Todos os direitos reservados © 2026
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- TOAST DE NOTIFICAÇÃO FLUTUANTE ELEGANTE -->
+    <div
+      id="toast"
+      class="fixed top-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 -translate-y-4 scale-95"
+      role="alert"
+    >
+      <div class="px-4 py-2.5 rounded-full bg-stone-900/95 dark:bg-[#1C1F24]/95 text-white text-xs font-medium shadow-2xl backdrop-blur-md flex items-center gap-2 border border-stone-700/60 dark:border-stone-600/60">
+        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+        <span id="toastMessage">Texto copiado!</span>
+      </div>
+    </div>
+
+    <!-- MODAL DE AGENDAMENTO RÁPIDO VIA WHATSAPP -->
+    <div
+      id="bookingModal"
+      class="fixed inset-0 z-50 bg-stone-950/60 dark:bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity"
+      onclick="if(event.target === this) closeBookingModal()"
+    >
+      <div class="bg-white dark:bg-[#16181C] rounded-3xl p-5 sm:p-6 max-w-sm w-full shadow-2xl border border-stone-200 dark:border-stone-800 transform transition-all text-left">
+        <div class="flex items-center justify-between mb-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-emerald-50 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 flex items-center justify-center border border-emerald-100 dark:border-emerald-500/30">
+              <i data-lucide="message-square" class="w-4 h-4"></i>
+            </div>
+            <h3 class="font-serif-luxury text-lg font-bold text-graphite-900 dark:text-stone-50">
+              Agendar no WhatsApp
+            </h3>
+          </div>
+          <button
+            type="button"
+            onclick="closeBookingModal()"
+            class="text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 p-1 rounded-lg"
+          >
+            <i data-lucide="x" class="w-5 h-5"></i>
+          </button>
+        </div>
+
+        <p class="text-xs text-stone-500 dark:text-stone-400 mb-4">
+          Escolha os detalhes para gerar sua mensagem personalizada:
+        </p>
+
+        <form onsubmit="handleSendWhatsApp(event)" class="space-y-3.5">
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-600 dark:text-stone-300 mb-1">
+              Seu Nome:
+            </label>
+            <input
+              type="text"
+              id="bookingClientName"
+              placeholder="Ex: Mariana Silva"
+              required
+              class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-white/5 border border-stone-200 dark:border-stone-700 text-graphite-900 dark:text-stone-100 focus:outline-hidden focus:border-sage-500 dark:focus:border-champagne-400 focus:ring-1 focus:ring-sage-500"
+            />
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-600 dark:text-stone-300 mb-1">
+              Modalidade de Atendimento:
+            </label>
+            <select
+              id="bookingModality"
+              class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-[#1E2024] border border-stone-200 dark:border-stone-700 text-graphite-900 dark:text-stone-100 focus:outline-hidden focus:border-sage-500 dark:focus:border-champagne-400 focus:ring-1 focus:ring-sage-500"
+            >
+              <option value="Online">Psicoterapia Online</option>
+              <option value="Presencial nos Jardins">Atendimento Presencial nos Jardins (SP)</option>
+              <option value="Avaliação / Programa Especial">Programa Específico / Avaliação</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-600 dark:text-stone-300 mb-1">
+              Melhor Período para Sessões:
+            </label>
+            <div class="grid grid-cols-3 gap-2">
+              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-sage-700 dark:has-[:checked]:bg-champagne-500 has-[:checked]:text-white dark:has-[:checked]:text-stone-950 has-[:checked]:border-sage-700 dark:has-[:checked]:border-champagne-500 transition-all">
+                <input type="radio" name="shift" value="Manhã" checked class="sr-only" />
+                Manhã
+              </label>
+              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-sage-700 dark:has-[:checked]:bg-champagne-500 has-[:checked]:text-white dark:has-[:checked]:text-stone-950 has-[:checked]:border-sage-700 dark:has-[:checked]:border-champagne-500 transition-all">
+                <input type="radio" name="shift" value="Tarde" class="sr-only" />
+                Tarde
+              </label>
+              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-sage-700 dark:has-[:checked]:bg-champagne-500 has-[:checked]:text-white dark:has-[:checked]:text-stone-950 has-[:checked]:border-sage-700 dark:has-[:checked]:border-champagne-500 transition-all">
+                <input type="radio" name="shift" value="Noite" class="sr-only" />
+                Noite
+              </label>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full mt-2 py-2.5 px-4 rounded-xl bg-sage-800 dark:bg-champagne-500 hover:bg-sage-700 dark:hover:bg-champagne-400 active:scale-98 text-white dark:text-stone-950 text-xs font-semibold shadow-md transition-all flex items-center justify-center gap-2"
+          >
+            <i data-lucide="send" class="w-4 h-4"></i>
+            <span>Iniciar Conversa no WhatsApp</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MODAL DO QR CODE (PARA COMPARTILHAMENTO FÍSICO / DESKTOP) -->
+    <div
+      id="qrModal"
+      class="fixed inset-0 z-50 bg-stone-950/60 dark:bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity"
+      onclick="if(event.target === this) toggleQRModal(false)"
+    >
+      <div class="bg-white dark:bg-[#16181C] rounded-3xl p-6 max-w-xs w-full text-center shadow-2xl border border-stone-200 dark:border-stone-800 transform transition-all">
+        <div class="w-12 h-12 rounded-full bg-champagne-50 dark:bg-white/5 border border-champagne-200 dark:border-white/10 text-champagne-600 dark:text-champagne-300 mx-auto flex items-center justify-center mb-3">
+          <i data-lucide="qr-code" class="w-6 h-6"></i>
+        </div>
+        <h3 class="font-serif-luxury text-xl font-bold text-graphite-900 dark:text-stone-50">
+          QR Code do Perfil
+        </h3>
+        <p class="text-xs text-stone-500 dark:text-stone-400 mt-1 mb-4">
+          Aponte a câmera do seu celular para abrir esta bio instantaneamente
+        </p>
+        
+        <!-- QR Code com borda e contraste preservado para leitura por câmeras -->
+        <div class="p-3 bg-white rounded-2xl border border-stone-200 shadow-sm inline-block mb-4">
+          <img
+            id="qrCodeImage"
+            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fdrahelenavasconcellos.com.br&color=1a1b1c&bgcolor=ffffff"
+            alt="QR Code"
+            class="w-40 h-40 rounded-lg mx-auto"
+            loading="lazy"
+          />
+        </div>
+
+        <button
+          type="button"
+          onclick="toggleQRModal(false)"
+          class="w-full py-2.5 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-xs font-semibold hover:bg-stone-800 dark:hover:bg-white transition-colors"
+        >
+          Fechar
+        </button>
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT NATIVO AUTO-CONTIDO -->
+    <script>
+      // ==========================================
+      // CONTROLE GLOBAL DO TEMA CLARO / ESCURO
+      // ==========================================
+      function initTheme() {
+        // Verifica preferência salva ou preferência do sistema
+        const savedTheme = localStorage.getItem('preferred-theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+          setTheme('dark', false);
+        } else {
+          setTheme('light', false);
+        }
+      }
+
+      function setTheme(theme, notify = true) {
+        const root = document.documentElement;
+        const icon = document.getElementById('themeIcon');
+        
+        if (theme === 'dark') {
+          root.classList.add('dark');
+          localStorage.setItem('preferred-theme', 'dark');
+          if (icon) {
+            icon.setAttribute('data-lucide', 'sun');
+            icon.classList.add('text-champagne-300');
+          }
+          if (notify) showToast("Modo noturno de alto contraste ativado");
+        } else {
+          root.classList.remove('dark');
+          localStorage.setItem('preferred-theme', 'light');
+          if (icon) {
+            icon.setAttribute('data-lucide', 'moon');
+            icon.classList.remove('text-champagne-300');
+          }
+          if (notify) showToast("Modo claro editorial ativado");
+        }
+
+        // Atualizar estado das abas de nicho de acordo com o tema
+        updateNicheTabsUI();
+
+        // Reinicializar ícones
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      function toggleTheme() {
+        const isDark = document.documentElement.classList.contains('dark');
+        setTheme(isDark ? 'light' : 'dark', true);
+      }
+
+      // ==========================================
+      // DADOS DOS PERFIS (Psicologia Clínica & Advocacia)
+      // ==========================================
+      const PROFILES = {
+        psychology: {
+          name: "Dra. Helena Vasconcellos",
+          title: "Psicóloga Clínica & Psicoterapeuta",
+          registry: "CRP 06/142980 · Mestre em Psicologia (USP)",
+          bio: "Acolhimento empático e psicoterapia fundamentada em evidências científicas para manejo de ansiedade, regulação emocional e autodesenvolvimento de alta performance.",
+          avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=480&q=85",
+          status: "Agenda Aberta · Atendimento Online e Presencial",
+          whatsapp: "5511998765432",
+          email: "contato@drahelenavasconcellos.com.br",
+          pixKey: "pix@drahelenavasconcellos.com.br",
+          bank: "Banco C6 · Helena Vasconcellos Psicologia",
+          address: "Edifício Infinity Jardins · Alameda Santos, 1800 — Conj. 142",
+          addressMapQuery: "Alameda+Santos,+1800+-+Cerqueira+César,+São+Paulo+-+SP",
+          district: "Jardins · SP",
+          neighborhoodNotes: "A 300m da Estação Trianon-Masp · Estacionamento com manobrista",
+          accentColor: "sage",
+          aboutHeader: "Sobre Mim & Formação Acadêmica",
+          aboutSubtitle: "10+ anos de prática clínica e pesquisa",
+          aboutTexts: [
+            "Graduada e mestre em Psicologia Clínica pela <strong>Universidade de São Paulo (USP)</strong>, com especialização em Terapia Cognitivo-Comportamental (TCC) pelo <strong>Hospital Israelita Albert Einstein</strong>.",
+            "Minha prática clínica combina o rigor científico das intervenções contemporâneas de 3ª onda (como a Terapia de Aceitação e Compromisso - ACT) com uma postura acolhedora, humana e atenta à singularidade de cada história de vida."
+          ],
+          metrics: [
+            { title: "4.000+ Horas", subtitle: "Atendimentos clínicos" },
+            { title: "Brasil & Exterior", subtitle: "Pacientes em 14 países" }
+          ],
+          services: [
+            {
+              title: "Psicoterapia Individual Online",
+              description: "Sessões estruturadas de 50 min em ambiente confidencial e criptografado",
+              icon: "video",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Psicoterapia%20Individual%20Online.",
+              badge: "Mais Buscado"
+            },
+            {
+              title: "Protocolo Ansiedade & Burnout",
+              description: "Intervenção focada em alta exigência, líderes e estresse crônico",
+              icon: "brain",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Protocolo%20de%20Manejo%20de%20Ansiedade%20e%20Burnout.",
+              badge: "Especialidade"
+            },
+            {
+              title: "Clube do Livro & Leituras Terapêuticas",
+              description: "Comunidade mensal com análises guiadas e reflexões de obras selecionadas",
+              icon: "book-open",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20participar%20do%20Clube%20do%20Livro%20Terap%C3%AAutico.",
+              badge: "Comunidade"
+            },
+            {
+              title: "Artigos & Ensaios Clínicos",
+              description: "Publicações sobre neurociências, relacionamentos e saúde emocional",
+              icon: "newspaper",
+              link: "https://medium.com",
+              badge: "Conteúdo"
+            }
+          ],
+          ethicsTitle: "Compromisso Ético & Sigilo Profissional",
+          ethicsText: "Atendimento estritamente regulamentado pelo Código de Ética do Psicólogo. Plataformas com criptografia ponta a ponta e sigilo clínico absoluto em todas as sessões virtuais ou presenciais.",
+          footer: "Dra. Helena Vasconcellos · Psicologia Clínica (CRP 06/142980)"
+        },
+        law: {
+          name: "Dra. Camila Siqueira",
+          title: "Advocacia Estratégica & Compliance",
+          registry: "OAB/SP 384.219 · Mestre em Direito Comercial (USP)",
+          bio: "Assessoria jurídica personalizada para líderes, empresas e patrimônios familiares, aliando rigor técnico, visão de negócios e soluções preventivas de alta eficiência.",
+          avatar: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=480&q=85",
+          status: "Consultoria Ativa · São Paulo, Faria Lima & Remoto",
+          whatsapp: "5511998765432",
+          email: "contato@camilasiqueira.adv.br",
+          pixKey: "pix@camilasiqueira.adv.br",
+          bank: "Banco Itaú Personnalité · Siqueira Sociedade de Advogados",
+          address: "Faria Lima Financial Tower · Av. Brig. Faria Lima, 3477 — 11º andar",
+          addressMapQuery: "Av.+Brigadeiro+Faria+Lima,+3477+-+Itaim+Bibi,+São+Paulo+-+SP",
+          district: "Itaim Bibi · SP",
+          neighborhoodNotes: "Edifício com heliponto e valet no local · Próximo ao Shopping JK Iguatemi",
+          accentColor: "navy",
+          aboutHeader: "Sobre Mim & Trajetória Jurídica",
+          aboutSubtitle: "12+ anos em contencioso e consultoria corporativa",
+          aboutTexts: [
+            "Graduada e mestre em Direito Comercial pela <strong>Faculdade de Direito do Largo São Francisco (USP)</strong>, com LL.M. em Direito Societário e Governança Corporativa pelo <strong>Insper</strong>.",
+            "Atuação consultiva e contenciosa especializada na prevenção de litígios, estruturação societária segura e proteção patrimonial de famílias empresárias e executivos."
+          ],
+          metrics: [
+            { title: "R$ 180M+", subtitle: "Em operações assessoradas" },
+            { title: "98% Êxito", subtitle: "Em soluções preventivas e acordos" }
+          ],
+          services: [
+            {
+              title: "Consultoria Societária & M&A",
+              description: "Assessoria estratégica para reorganizações societárias e contratos complexos",
+              icon: "briefcase",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Consultoria%20Societ%C3%A1ria.",
+              badge: "Corporativo"
+            },
+            {
+              title: "Planejamento Sucessório & Patrimonial",
+              description: "Estruturação de holdings e proteção legal para famílias empresárias",
+              icon: "shield",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20sobre%20Planejamento%20Patrimonial.",
+              badge: "Private"
+            },
+            {
+              title: "Pareceres Jurídicos & Compliance",
+              description: "Auditoria preventiva e análise de riscos regulatórios para empresas",
+              icon: "file-text",
+              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20Parecer%20Jur%C3%ADdico.",
+              badge: "Estratégico"
+            },
+            {
+              title: "Artigos Jurídicos & Análises",
+              description: "Ensaios sobre direito dos negócios e jurisprudência dos Tribunais Superiores",
+              icon: "scale",
+              link: "https://linkedin.com",
+              badge: "Artigos"
+            }
+          ],
+          ethicsTitle: "Sigilo & Governança Jurídica",
+          ethicsText: "Atuação regida pelo Código de Ética e Disciplina da OAB. Garantia absoluta de inviolabilidade de comunicações e sigilo profissional estrito para todos os clientes e operações.",
+          footer: "Dra. Camila Siqueira · Advocacia & Consultoria Estratégica (OAB/SP 384.219)"
+        }
+      };
+
+      let currentNiche = 'psychology';
+
+      // ==========================================
+      // ATUALIZAÇÃO DA ABA DE NICHO (RESPEITA TEMA)
+      // ==========================================
+      function updateNicheTabsUI() {
+        const tabPsych = document.getElementById('tabPsych');
+        const tabLaw = document.getElementById('tabLaw');
+        const isDark = document.documentElement.classList.contains('dark');
+
+        if (currentNiche === 'psychology') {
+          if (isDark) {
+            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-champagne-500 text-stone-950 shadow-xs";
+            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-400 hover:text-stone-100";
+          } else {
+            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 text-white shadow-xs";
+            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 hover:text-stone-900";
+          }
+        } else {
+          if (isDark) {
+            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-champagne-500 text-stone-950 shadow-xs";
+            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-400 hover:text-stone-100";
+          } else {
+            tabLaw.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 bg-graphite-900 text-white shadow-xs";
+            tabPsych.className = "px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200 text-stone-600 hover:text-stone-900";
+          }
+        }
+      }
+
+      // ==========================================
+      // RENDERIZAR PERFIL ATIVO
+      // ==========================================
+      function renderProfile(nicheKey) {
+        currentNiche = nicheKey;
+        const data = PROFILES[nicheKey];
+
+        // Atualizar textos e imagens principais
+        document.getElementById('profileName').textContent = data.name;
+        document.getElementById('profileSpecialty').textContent = data.title;
+        document.getElementById('profileRegistry').innerHTML = `
+          <span>${data.registry.split('·')[0].trim()}</span>
+          <span aria-hidden="true" class="text-stone-300 dark:text-stone-600">·</span>
+          <span>${data.registry.split('·')[1]?.trim() || ''}</span>
+        `;
+        document.getElementById('profileBio').textContent = data.bio;
+        document.getElementById('profileAvatar').src = data.avatar;
+        document.getElementById('profileStatus').textContent = data.status;
+
+        // Atualizar Contato e Pix
+        document.getElementById('pixKeyText').textContent = data.pixKey;
+        document.getElementById('pixBankName').textContent = data.bank;
+        document.getElementById('socialEmail').href = `mailto:${data.email}`;
+
+        // Atualizar Localização
+        document.getElementById('officeDistrict').textContent = data.district;
+        document.getElementById('officeAddress').textContent = data.address;
+        document.getElementById('officeNotes').textContent = data.neighborhoodNotes;
+        document.getElementById('mapsLink').href = `https://maps.google.com/?q=${data.addressMapQuery}`;
+
+        // Atualizar Seção Sobre
+        document.getElementById('aboutHeaderTitle').textContent = data.aboutHeader;
+        document.getElementById('aboutHeaderSubtitle').textContent = data.aboutSubtitle;
+        
+        const aboutDetailsEl = document.getElementById('aboutTextDetails');
+        aboutDetailsEl.innerHTML = data.aboutTexts.map(t => `<p class="leading-relaxed">${t}</p>`).join('');
+
+        const aboutMetricsEl = document.getElementById('aboutMetrics');
+        aboutMetricsEl.innerHTML = data.metrics.map(m => `
+          <div class="p-2 rounded-xl bg-stone-50 dark:bg-white/5 border border-stone-200/60 dark:border-white/10 transition-colors">
+            <span class="block font-bold text-graphite-800 dark:text-stone-100">${m.title}</span>
+            <span class="text-stone-500 dark:text-stone-400">${m.subtitle}</span>
+          </div>
+        `).join('');
+
+        // Renderizar Lista de Serviços com suporte total a alto contraste
+        const servicesContainer = document.getElementById('servicesContainer');
+        servicesContainer.innerHTML = data.services.map(svc => `
+          <a
+            href="${svc.link}"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+          >
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-stone-100/90 dark:bg-white/5 border border-stone-200 dark:border-white/10 text-stone-700 dark:text-champagne-300 flex items-center justify-center group-hover:bg-graphite-900 dark:group-hover:bg-champagne-500 group-hover:text-white dark:group-hover:text-stone-950 transition-colors shrink-0">
+                <i data-lucide="${svc.icon}" class="w-5 h-5"></i>
+              </div>
+              <div class="text-left">
+                <div class="flex items-center gap-2">
+                  <h3 class="font-serif-luxury text-base font-bold text-graphite-900 dark:text-stone-100 group-hover:text-champagne-700 dark:group-hover:text-champagne-300 transition-colors">
+                    ${svc.title}
+                  </h3>
+                </div>
+                <p class="text-[11px] text-stone-500 dark:text-stone-400 leading-snug">
+                  ${svc.description}
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-500 font-medium">${svc.badge}</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover:text-champagne-600 dark:group-hover:text-champagne-300 transition-colors"></i>
+            </div>
+          </a>
+        `).join('');
+
+        // Ética & Footer
+        document.getElementById('ethicsHeader').textContent = data.ethicsTitle;
+        document.getElementById('ethicsText').textContent = data.ethicsText;
+        document.getElementById('footerTitle').textContent = data.name;
+        document.getElementById('footerRegistry').textContent = data.registry;
+
+        // Atualizar QR Code URL
+        document.getElementById('qrCodeImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(window.location.href)}&color=1a1b1c&bgcolor=ffffff`;
+
+        // Detalhes CTA
+        if (nicheKey === 'psychology') {
+          document.getElementById('ctaDetails').textContent = "Atendimento online ou presencial nos Jardins";
+        } else {
+          document.getElementById('ctaDetails').textContent = "Reunião de alinhamento estratégico via WhatsApp";
+        }
+
+        updateNicheTabsUI();
+
+        // Reinicializar ícones Lucide
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      function switchNiche(nicheKey) {
+        renderProfile(nicheKey);
+        showToast(`Exibindo perfil: ${nicheKey === 'psychology' ? 'Psicologia Clínica' : 'Advocacia Estratégica'}`);
+      }
+
+      // ==========================================
+      // SISTEMA DE TOAST NOTIFICAÇÃO
+      // ==========================================
+      let toastTimeout = null;
+      function showToast(message, duration = 2600) {
+        const toast = document.getElementById('toast');
+        const toastMsg = document.getElementById('toastMessage');
+        toastMsg.innerText = message;
+        
+        toast.classList.remove('opacity-0', '-translate-y-4', 'scale-95');
+        toast.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+
+        if (toastTimeout) clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.add('opacity-0', '-translate-y-4', 'scale-95');
+          toast.classList.remove('opacity-100', 'translate-y-0', 'scale-100');
+        }, duration);
+      }
+
+      // ==========================================
+      // COPIAR CHAVE PIX
+      // ==========================================
+      function copyPixKey() {
+        const key = PROFILES[currentNiche].pixKey;
+        navigator.clipboard.writeText(key).then(() => {
+          const btnText = document.getElementById('pixCopyBtnText');
+          const btn = document.getElementById('copyPixBtn');
+          
+          btnText.innerText = "Copiado!";
+          btn.classList.add('bg-emerald-600', 'hover:bg-emerald-700', 'text-white');
+          btn.classList.remove('bg-champagne-500', 'hover:bg-champagne-600', 'dark:bg-champagne-500', 'dark:text-stone-950');
+
+          showToast("Chave Pix copiada com sucesso!");
+
+          if (navigator.vibrate) navigator.vibrate(40);
+
+          setTimeout(() => {
+            btnText.innerText = "Copiar";
+            btn.classList.remove('bg-emerald-600', 'hover:bg-emerald-700', 'text-white');
+            btn.classList.add('bg-champagne-500', 'hover:bg-champagne-600', 'dark:bg-champagne-500', 'dark:text-stone-950');
+          }, 2400);
+        }).catch(() => {
+          showToast(`Chave Pix: ${key}`);
+        });
+      }
+
+      // ==========================================
+      // COPIAR ENDEREÇO DO CONSULTÓRIO
+      // ==========================================
+      function copyAddress() {
+        const address = PROFILES[currentNiche].address;
+        navigator.clipboard.writeText(address).then(() => {
+          const textSpan = document.getElementById('copyAddressText');
+          textSpan.innerText = "Copiado!";
+          showToast("Endereço copiado para a área de transferência!");
+          if (navigator.vibrate) navigator.vibrate(30);
+
+          setTimeout(() => {
+            textSpan.innerText = "Copiar Endereço";
+          }, 2400);
+        });
+      }
+
+      // ==========================================
+      // ACORDEOM RETRÁTIL SOBRE
+      // ==========================================
+      let isAboutOpen = false;
+      function toggleAboutAccordion(forceOpen = null) {
+        const content = document.getElementById('aboutContent');
+        const arrow = document.getElementById('accordionArrow');
+        const btn = document.getElementById('accordionAboutBtn');
+
+        if (forceOpen !== null) {
+          isAboutOpen = forceOpen;
+        } else {
+          isAboutOpen = !isAboutOpen;
+        }
+
+        if (isAboutOpen) {
+          content.classList.remove('hidden');
+          arrow.classList.add('rotate-180');
+          btn.setAttribute('aria-expanded', 'true');
+        } else {
+          content.classList.add('hidden');
+          arrow.classList.remove('rotate-180');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+
+      // ==========================================
+      // COMPARTILHAR PERFIL
+      // ==========================================
+      function shareProfile() {
+        const profile = PROFILES[currentNiche];
+        const shareData = {
+          title: `${profile.name} | ${profile.title}`,
+          text: `Acesse o canal de atendimento e links profissionais de ${profile.name}:`,
+          url: window.location.href,
+        };
+
+        if (navigator.share) {
+          navigator.share(shareData).catch(() => {});
+        } else {
+          navigator.clipboard.writeText(window.location.href).then(() => {
+            showToast("Link do perfil copiado!");
+          });
+        }
+      }
+
+      // ==========================================
+      // DOWNLOAD DO CARTÃO DE VISITA (vCard .vcf)
+      // ==========================================
+      function downloadVCard() {
+        const profile = PROFILES[currentNiche];
+        const vcardData = [
+          "BEGIN:VCARD",
+          "VERSION:3.0",
+          `FN:${profile.name}`,
+          `TITLE:${profile.title}`,
+          `ORG:${profile.title}`,
+          `TEL;TYPE=CELL,VOICE:+${profile.whatsapp}`,
+          `EMAIL;TYPE=PREF,INTERNET:${profile.email}`,
+          `ADR;TYPE=WORK:;;${profile.address};São Paulo;SP;;Brasil`,
+          `URL:${window.location.href}`,
+          `NOTE:${profile.registry} - ${profile.bio}`,
+          "END:VCARD"
+        ].join("\r\n");
+
+        const blob = new Blob([vcardData], { type: "text/vcard;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", `${profile.name.replace(/\s+/g, '_')}.vcf`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+
+        showToast("Contato baixado! Abra para salvar no celular.");
+      }
+
+      // ==========================================
+      // MODAIS (QR Code e WhatsApp Builder)
+      // ==========================================
+      function toggleQRModal(show) {
+        const modal = document.getElementById('qrModal');
+        if (show) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        } else {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+
+      function openBookingModal() {
+        const modal = document.getElementById('bookingModal');
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+
+      function closeBookingModal() {
+        const modal = document.getElementById('bookingModal');
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+
+      function handleSendWhatsApp(event) {
+        event.preventDefault();
+        const profile = PROFILES[currentNiche];
+        const name = document.getElementById('bookingClientName').value.trim();
+        const modality = document.getElementById('bookingModality').value;
+        const shift = document.querySelector('input[name="shift"]:checked')?.value || "qualquer horário";
+
+        const message = `Olá, ${profile.name}! Meu nome é ${name}. Gostaria de informações sobre disponibilidade para agendamento de consulta na modalidade "${modality}" (preferência pelo período da ${shift}).`;
+        const whatsappUrl = `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(message)}`;
+
+        closeBookingModal();
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      }
+
+      // Inicialização
+      document.addEventListener('DOMContentLoaded', () => {
+        initTheme();
+        renderProfile('psychology');
+      });
+    </script>
+  </body>
+</html>

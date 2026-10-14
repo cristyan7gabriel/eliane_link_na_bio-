@@ -1,0 +1,6 @@
+{
+  "name": "Dra. Helena Vasconcellos | Bio & Links Profissionais",
+  "description": "Centralizador de links e bio profissional de alto padrão para profissionais liberais, com agendamento via WhatsApp, serviços clínicos, sobre e chave Pix.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
