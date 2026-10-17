@@ -1,30 +1,33 @@
 <!doctype html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>Dra. Helena Vasconcellos | Bio & Links Profissionais</title>
+    <title>Eliene Matos | Estética Avançada & Cuidados Capilares</title>
     <meta
       name="description"
-      content="Centralizador de links e bio profissional de alto padrão para profissionais liberais (Psicologia Clínica CRP e Advocacia OAB). Agendamentos, consultas, localização e Pix."
+      content="Bio e links oficiais de Eliene Matos. Esteticista e Cabeleireira em Goiânia - GO com mais de 26 anos de experiência. Agendamentos via WhatsApp, tratamentos faciais, terapia capilar, localização e horários."
     />
-    <meta property="og:title" content="Dra. Helena Vasconcellos | Bio & Links Profissionais" />
+    <meta property="og:title" content="Eliene Matos | Estética Avançada & Cuidados Capilares" />
     <meta
       property="og:description"
-      content="Alternativa de alto padrão ao Linktree: agendamento direto no WhatsApp, serviços especializados, sobre e localização do consultório."
+      content="Mais de 26 anos transformando a beleza e a autoestima feminina. Agende seu atendimento exclusivo via WhatsApp."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="/fotos/logo.png" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Google Fonts: Cormorant Garamond (editorial luxury) & Plus Jakarta Sans (clean modern sans) -->
+    <link rel="icon" type="image/png" href="/fotos/logo.png" />
+
+    <!-- Google Fonts: Cormorant Garamond (Editorial Luxury) & Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Tailwind CSS via CDN with darkMode: 'class' -->
+    <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -32,48 +35,34 @@
         theme: {
           extend: {
             colors: {
-              cream: {
-                50: '#FAF8F5',
-                100: '#F5F0E8',
-                200: '#EAE1D3',
-                300: '#DED1BD',
+              gold: {
+                50: '#FDFBF4',
+                100: '#FAF3E0',
+                200: '#F3E5AB',
+                300: '#E5D187',
+                400: '#D4AF37',
+                500: '#C59B27',
+                600: '#A97C19',
+                700: '#875F10',
+                800: '#644409',
+                900: '#432C04',
               },
-              champagne: {
-                50: '#FDFBF7',
-                100: '#F9F4EA',
-                200: '#F1E6CD',
-                300: '#E5D1A4',
-                400: '#D6B875',
-                500: '#C19B4C',
-                600: '#A88236',
-                700: '#876625',
-              },
-              sage: {
-                50: '#F4F7F5',
-                100: '#E3ECE6',
-                200: '#C5D7CC',
-                500: '#52796F',
-                600: '#3D5A52',
-                700: '#2C423C',
-                800: '#1F2F2B',
-                900: '#15211E',
-              },
-              navy: {
-                800: '#1E2530',
-                900: '#141A24',
-                950: '#0D1117',
-              },
-              graphite: {
-                700: '#3A3B3C',
-                800: '#272829',
-                900: '#1A1B1C',
-                950: '#111213',
+              emeraldBrand: {
+                50: '#F0F7F4',
+                100: '#DCEEE4',
+                200: '#BCE0CE',
+                500: '#2D6A4F',
+                600: '#23533E',
+                700: '#1B3E2D',
+                800: '#153023',
+                900: '#0E2017',
+                950: '#08140E',
               },
               obsidian: {
-                800: '#1E2024',
-                850: '#17191C',
-                900: '#121316',
-                950: '#0C0D0E',
+                800: '#1A1C20',
+                850: '#141619',
+                900: '#0F1113',
+                950: '#0A0B0D',
               },
             },
             fontFamily: {
@@ -81,23 +70,23 @@
               sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
             },
             keyframes: {
-              subtlePulse: {
-                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 8px 24px -4px rgba(61, 90, 82, 0.25)' },
-                '50%': { transform: 'scale(1.012)', boxShadow: '0 14px 28px -4px rgba(61, 90, 82, 0.38)' },
-              },
-              subtlePulseDark: {
-                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 8px 24px -4px rgba(82, 121, 111, 0.2)' },
-                '50%': { transform: 'scale(1.012)', boxShadow: '0 14px 30px -4px rgba(193, 155, 76, 0.3)' },
+              subtlePulseGold: {
+                '0%, 100%': { transform: 'scale(1)', boxShadow: '0 8px 24px -4px rgba(212, 175, 55, 0.28)' },
+                '50%': { transform: 'scale(1.012)', boxShadow: '0 14px 30px -4px rgba(212, 175, 55, 0.45)' },
               },
               shimmer: {
                 '0%': { transform: 'translateX(-100%)' },
                 '100%': { transform: 'translateX(250%)' },
               },
+              floatSlow: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
             },
             animation: {
-              'subtle-pulse': 'subtlePulse 3.8s ease-in-out infinite',
-              'subtle-pulse-dark': 'subtlePulseDark 3.8s ease-in-out infinite',
+              'pulse-gold': 'subtlePulseGold 3.6s ease-in-out infinite',
               shimmer: 'shimmer 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+              float: 'floatSlow 4.5s ease-in-out infinite',
             },
           },
         },
@@ -108,53 +97,75 @@
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-      /* Smooth behavior and typography refinements */
       html {
         scroll-behavior: smooth;
         -webkit-tap-highlight-color: transparent;
       }
       body {
         font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-        background-color: #FAF8F5;
-        color: #272829;
+        background-color: #FAF7F2;
+        color: #202226;
         transition: background-color 0.3s ease, color 0.3s ease;
       }
       .font-serif-luxury {
         font-family: 'Cormorant Garamond', Georgia, serif;
       }
 
-      /* High-end glassmorphism for Light Mode */
+      /* Efeito de Gradiente Dourado Metálico nos Textos */
+      .text-gold-gradient {
+        background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #C59B27 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text-gold-light {
+        background: linear-gradient(135deg, #FFF3D1 0%, #E5C378 50%, #B88E28 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Borda metálica fina inspirada na logomarca */
+      .border-gold-glow {
+        border: 1px solid rgba(212, 175, 55, 0.35);
+      }
+      .border-gold-glow:hover {
+        border-color: rgba(212, 175, 55, 0.75);
+        box-shadow: 0 0 20px -3px rgba(212, 175, 55, 0.25);
+      }
+
+      /* High-end glassmorphism para Modo Claro */
       .glass-card {
         background: rgba(255, 255, 255, 0.88);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
-        border: 1px solid rgba(222, 209, 189, 0.55);
+        border: 1px solid rgba(212, 175, 55, 0.28);
         transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
       }
       .glass-card:hover {
         background: rgba(255, 255, 255, 0.98);
-        border-color: rgba(193, 155, 76, 0.45);
+        border-color: rgba(197, 155, 39, 0.65);
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px -5px rgba(28, 29, 28, 0.05);
+        box-shadow: 0 10px 25px -5px rgba(28, 29, 28, 0.06);
       }
       .glass-card:active {
         transform: translateY(0) scale(0.995);
       }
 
-      /* High-end glassmorphism for Dark Mode */
+      /* High-end glassmorphism para Modo Escuro (Identidade da Logomarca) */
       .dark body {
-        background-color: #0C0D0E;
-        color: #FAF8F5;
+        background-color: #0A0C0E;
+        color: #F8F6F0;
       }
       .dark .glass-card {
-        background: rgba(20, 22, 26, 0.82);
-        border: 1px solid rgba(214, 184, 117, 0.16);
-        box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+        background: rgba(18, 20, 24, 0.82);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(212, 175, 55, 0.22);
+        box-shadow: 0 6px 24px -2px rgba(0, 0, 0, 0.6);
       }
       .dark .glass-card:hover {
-        background: rgba(26, 29, 34, 0.95);
-        border-color: rgba(214, 184, 117, 0.45);
-        box-shadow: 0 12px 30px -5px rgba(0, 0, 0, 0.6), 0 0 15px -3px rgba(193, 155, 76, 0.12);
+        background: rgba(24, 27, 33, 0.96);
+        border-color: rgba(212, 175, 55, 0.55);
+        box-shadow: 0 14px 32px -4px rgba(0, 0, 0, 0.75), 0 0 20px -3px rgba(212, 175, 55, 0.18);
       }
 
       /* Custom scrollbar */
@@ -165,147 +176,85 @@
         background: transparent;
       }
       ::-webkit-scrollbar-thumb {
-        background: #DED1BD;
+        background: #D4AF37;
         border-radius: 999px;
-      }
-      .dark ::-webkit-scrollbar-thumb {
-        background: #3A3B3C;
       }
     </style>
   </head>
-  <body class="min-h-screen bg-[#FAF8F5] dark:bg-[#0C0D0E] text-graphite-800 dark:text-stone-100 antialiased selection:bg-champagne-200 selection:text-graphite-900 pb-16 transition-colors duration-300">
-    <!-- Ambient Organic Lighting (Warm Cream & Sage in Light, Deep Gold & Forest Obsidian in Dark) -->
+  <body class="min-h-screen bg-[#FAF7F2] dark:bg-[#0A0C0E] text-stone-800 dark:text-stone-100 antialiased selection:bg-gold-300 selection:text-stone-900 pb-16 transition-colors duration-300">
+    
+    <!-- Luzes Ambientais Orgânicas (Dourado Metálico e Verde Folhagem inspirados no painel) -->
     <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      <div id="ambientGlowTop" class="absolute -top-36 left-1/2 -translate-x-1/2 w-[580px] h-[580px] bg-gradient-to-b from-champagne-200/40 via-cream-200/25 to-transparent dark:from-champagne-500/10 dark:via-champagne-700/5 dark:to-transparent rounded-full blur-3xl transition-colors duration-700"></div>
-      <div id="ambientGlowMid" class="absolute top-[40%] -right-28 w-88 h-88 bg-sage-100/40 dark:bg-sage-900/15 rounded-full blur-3xl transition-colors duration-700"></div>
-      <div id="ambientGlowBottom" class="absolute bottom-12 -left-28 w-80 h-80 bg-champagne-100/45 dark:bg-obsidian-850/40 rounded-full blur-3xl transition-colors duration-700"></div>
+      <div id="ambientGlowTop" class="absolute -top-32 left-1/2 -translate-x-1/2 w-[620px] h-[620px] bg-gradient-to-b from-gold-400/25 via-gold-600/10 to-transparent dark:from-gold-400/15 dark:via-emeraldBrand-800/15 dark:to-transparent rounded-full blur-3xl transition-colors duration-700"></div>
+      <div id="ambientGlowMid" class="absolute top-[35%] -right-28 w-96 h-96 bg-emeraldBrand-200/25 dark:bg-emeraldBrand-900/20 rounded-full blur-3xl transition-colors duration-700"></div>
+      <div id="ambientGlowBottom" class="absolute bottom-10 -left-28 w-88 h-88 bg-gold-200/30 dark:bg-obsidian-900/60 rounded-full blur-3xl transition-colors duration-700"></div>
     </div>
 
-    <!-- Outer Wrapper (Refined luxury desktop frame + seamless mobile view) -->
-    <div class="relative z-10 w-full min-h-screen flex flex-col items-center justify-start px-3 py-4 sm:px-4 sm:py-10">
+    <!-- Outer Wrapper -->
+    <div class="relative z-10 w-full min-h-screen flex flex-col items-center justify-start px-3 py-4 sm:px-4 sm:py-8">
       
-      <!-- Desktop & Tablet Centered Frame Container -->
-      <div class="w-full max-w-[430px] flex flex-col items-center sm:p-5 sm:rounded-[36px] sm:shadow-2xl sm:border sm:border-stone-200/80 dark:sm:border-stone-800/80 sm:bg-white/40 dark:sm:bg-[#131518]/50 sm:backdrop-blur-xl transition-all duration-300">
+      <!-- Container Centralizado Premium (Mobile-First / Frame Tablet & Desktop) -->
+      <div class="w-full max-w-[440px] flex flex-col items-center sm:p-5 sm:rounded-[36px] sm:shadow-2xl sm:border sm:border-gold-400/20 dark:sm:border-gold-400/25 sm:bg-white/50 dark:sm:bg-[#111317]/75 sm:backdrop-blur-2xl transition-all duration-300">
 
-        <!-- Top Header Navigation Bar (Niche Switcher & Global Theme Toggle) -->
-        <nav class="w-full mb-4 flex items-center justify-between px-0.5 gap-1.5" aria-label="Controles Principais">
-          <!-- Niche Switcher Dropdown (Apenas a profissão ativa visível com menu suspenso elegante) -->
-          <div class="relative" id="nicheDropdownContainer">
-            <button
-              type="button"
-              id="nicheDropdownBtn"
-              onclick="toggleNicheDropdown()"
-              class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/85 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] backdrop-blur-md rounded-full border border-stone-200/70 dark:border-stone-700/60 shadow-xs text-xs font-semibold text-graphite-900 dark:text-stone-100 transition-all active:scale-95 cursor-pointer"
-              aria-haspopup="true"
-              aria-expanded="false"
-              title="Alternar Profissão"
-            >
-              <i data-lucide="brain" id="currentNicheIcon" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400"></i>
-              <span id="currentNicheLabel">Psicologia</span>
-              <i data-lucide="chevron-down" id="nicheChevron" class="w-3.5 h-3.5 text-stone-400 dark:text-stone-500 transition-transform duration-200"></i>
-            </button>
-
-            <!-- Dropdown Menu Suspenso -->
-            <div
-              id="nicheDropdownMenu"
-              class="hidden absolute left-0 top-full mt-1.5 w-56 rounded-2xl bg-white/95 dark:bg-[#16181C]/95 backdrop-blur-xl border border-stone-200/90 dark:border-stone-700/80 shadow-xl py-1.5 z-50 transition-all duration-200"
-            >
-              <div class="px-3.5 py-1 text-[10px] uppercase tracking-wider font-semibold text-stone-400 dark:text-stone-500 border-b border-stone-100 dark:border-white/5 mb-1">
-                Profissões Disponíveis
-              </div>
-              <button
-                type="button"
-                id="itemPsych"
-                onclick="selectNicheFromDropdown('psychology')"
-                class="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-stone-50 dark:hover:bg-white/5 transition-colors text-stone-700 dark:text-stone-200 rounded-xl"
-              >
-                <div class="flex items-center gap-2.5">
-                  <div class="w-7 h-7 rounded-lg bg-sage-100/70 dark:bg-white/10 flex items-center justify-center text-sage-800 dark:text-champagne-300 shrink-0">
-                    <i data-lucide="brain" class="w-4 h-4"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-graphite-900 dark:text-stone-100">Psicologia Clínica</p>
-                    <p class="text-[10px] text-stone-500 dark:text-stone-400">Dra. Helena Vasconcellos</p>
-                  </div>
-                </div>
-                <i data-lucide="check" id="checkPsych" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400"></i>
-              </button>
-
-              <button
-                type="button"
-                id="itemLaw"
-                onclick="selectNicheFromDropdown('law')"
-                class="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-stone-50 dark:hover:bg-white/5 transition-colors text-stone-700 dark:text-stone-200 rounded-xl"
-              >
-                <div class="flex items-center gap-2.5">
-                  <div class="w-7 h-7 rounded-lg bg-stone-100 dark:bg-white/10 flex items-center justify-center text-stone-800 dark:text-champagne-300 shrink-0">
-                    <i data-lucide="scale" class="w-4 h-4"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-graphite-900 dark:text-stone-100">Advocacia Estratégica</p>
-                    <p class="text-[10px] text-stone-500 dark:text-stone-400">Dra. Camila Siqueira</p>
-                  </div>
-                </div>
-                <i data-lucide="check" id="checkLaw" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400 hidden"></i>
-              </button>
-
-              <button
-                type="button"
-                id="itemNutri"
-                onclick="selectNicheFromDropdown('nutrition')"
-                class="w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-stone-50 dark:hover:bg-white/5 transition-colors text-stone-700 dark:text-stone-200 rounded-xl"
-              >
-                <div class="flex items-center gap-2.5">
-                  <div class="w-7 h-7 rounded-lg bg-emerald-100/70 dark:bg-white/10 flex items-center justify-center text-emerald-800 dark:text-champagne-300 shrink-0">
-                    <i data-lucide="apple" class="w-4 h-4"></i>
-                  </div>
-                  <div>
-                    <p class="font-semibold text-graphite-900 dark:text-stone-100">Nutrição & Longevidade</p>
-                    <p class="text-[10px] text-stone-500 dark:text-stone-400">Dra. Larissa Fontana</p>
-                  </div>
-                </div>
-                <i data-lucide="check" id="checkNutri" class="w-3.5 h-3.5 text-champagne-600 dark:text-champagne-400 hidden"></i>
-              </button>
+        <!-- Topo: Barra de Controles Rápidos -->
+        <nav class="w-full mb-3.5 flex items-center justify-between px-1" aria-label="Controles Principais">
+          <!-- Logo Marca & Selo -->
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full overflow-hidden border border-gold-400/50 shadow-xs shrink-0 bg-stone-950">
+              <img src="/fotos/logo.png" alt="Logomarca Eliene Matos" class="w-full h-full object-cover" />
+            </div>
+            <div class="text-left">
+              <span class="font-serif-luxury text-sm font-bold tracking-wide text-stone-900 dark:text-gold-200 block leading-none">
+                Eliene Matos
+              </span>
+              <span class="text-[9px] uppercase tracking-wider text-emerald-700 dark:text-emerald-400 font-semibold block mt-0.5">
+                Estética & Beleza
+              </span>
             </div>
           </div>
 
-          <!-- Quick Utility Actions: Dark Mode Toggle, Share, Contact & QR Code -->
-          <div class="flex items-center gap-1 sm:gap-1.5 shrink-0">
-            <!-- SELETOR DE TEMA CLARO / ESCURO GLOBAL -->
+          <!-- Ações Rápidas: Tema, Compartilhar, Salvar Contato, QR Code -->
+          <div class="flex items-center gap-1.5 shrink-0">
+            <!-- Alternador de Tema -->
             <button
               type="button"
               id="themeToggleBtn"
               onclick="toggleTheme()"
-              title="Alternar Modo Claro / Noturno"
-              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95 flex items-center justify-center"
-              aria-label="Alternar Tema Claro / Escuro"
+              title="Alternar Tema Claro / Noturno"
+              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-gold-200 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-gold-400/30 shadow-xs transition-all active:scale-95 flex items-center justify-center cursor-pointer"
+              aria-label="Alternar Tema Claro / Noturno"
             >
-              <i data-lucide="moon" id="themeIcon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-300"></i>
+              <i data-lucide="sun" id="themeIcon" class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gold-400 transition-transform duration-300"></i>
             </button>
 
+            <!-- Compartilhar Perfil -->
             <button
               type="button"
               onclick="shareProfile()"
               title="Compartilhar Bio"
-              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95 flex items-center justify-center"
+              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-gold-300 bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-gold-400/30 shadow-xs transition-all active:scale-95 flex items-center justify-center cursor-pointer"
               aria-label="Compartilhar Perfil"
             >
               <i data-lucide="share-2" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
             </button>
+
+            <!-- Salvar Contato na Agenda (vCard .vcf) -->
             <button
               type="button"
               onclick="downloadVCard()"
               title="Salvar Contato na Agenda"
-              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95 flex items-center justify-center"
+              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-gold-300 bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-gold-400/30 shadow-xs transition-all active:scale-95 flex items-center justify-center cursor-pointer"
               aria-label="Salvar na Agenda"
             >
               <i data-lucide="user-plus" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
             </button>
+
+            <!-- Exibir QR Code -->
             <button
               type="button"
               onclick="toggleQRModal(true)"
               title="Exibir QR Code"
-              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-stone-700/60 shadow-xs transition-all active:scale-95 flex items-center justify-center"
+              class="w-8 h-8 sm:w-9 sm:h-9 rounded-full text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-gold-300 bg-white/80 dark:bg-[#16181C]/90 hover:bg-white dark:hover:bg-[#1F2227] border border-stone-200/70 dark:border-gold-400/30 shadow-xs transition-all active:scale-95 flex items-center justify-center cursor-pointer"
               aria-label="Exibir QR Code"
             >
               <i data-lucide="qr-code" class="w-3.5 h-3.5 sm:w-4 sm:h-4"></i>
@@ -313,363 +262,584 @@
           </div>
         </nav>
 
-        <!-- Main Mobile Card Container -->
+        <!-- Conteúdo Principal -->
         <main class="w-full flex flex-col items-center">
           
-          <!-- Status Indicator Pill -->
+          <!-- Badge de Status em Tempo Real -->
           <div class="w-full flex items-center justify-center mb-3">
-            <div class="inline-flex items-center gap-2 text-[11px] font-medium tracking-wide text-stone-600 dark:text-stone-300 bg-white/80 dark:bg-[#16181C]/90 backdrop-blur-md border border-stone-200/60 dark:border-stone-700/60 px-3.5 py-1 rounded-full shadow-xs transition-colors duration-300">
+            <div class="inline-flex items-center gap-2 text-[11px] font-medium tracking-wide text-stone-700 dark:text-gold-200 bg-white/80 dark:bg-[#16181C]/95 backdrop-blur-md border border-gold-400/30 dark:border-gold-400/30 px-3.5 py-1 rounded-full shadow-xs transition-colors duration-300">
               <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span id="profileStatus">Agenda Aberta · Atendimento Online e Presencial</span>
+              <span id="profileStatus">Agenda Aberta · Atendimento no Setor Aeroporto</span>
             </div>
           </div>
 
-          <!-- 1. PERFIL / TOPO -->
-          <header class="w-full flex flex-col items-center text-center mt-1 mb-6">
-            <!-- Profile Avatar with refined luxury double ring and subtle shimmer -->
-            <div class="relative group cursor-pointer" onclick="toggleAboutAccordion(true)">
-              <!-- Outer gold ring accent -->
-              <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-champagne-400 via-champagne-200 to-sage-500 dark:from-champagne-500 dark:via-champagne-300 dark:to-emerald-600 opacity-60 blur-xs group-hover:opacity-100 transition duration-500"></div>
+          <!-- 1. PERFIL & FOTOS DE ELIENE MATOS -->
+          <header class="w-full flex flex-col items-center text-center mt-1 mb-5">
+            <!-- Avatar com Aro Duplo Dourado Metálico -->
+            <div class="relative group cursor-pointer" onclick="togglePhoto()" title="Clique para alternar a foto">
+              <!-- Halo Dourado & Esmeralda -->
+              <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-gold-500 via-gold-300 to-emerald-600 opacity-75 blur-xs group-hover:opacity-100 transition duration-500 animate-pulse-gold"></div>
               
-              <div class="relative p-1 rounded-full bg-white dark:bg-[#16181C] shadow-md transition-colors duration-300 shrink-0">
+              <div class="relative p-1 rounded-full bg-white dark:bg-[#141619] shadow-xl shrink-0">
                 <img
                   id="profileAvatar"
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&h=500&q=85&crop=faces"
-                  alt="Foto de perfil profissional"
-                  class="w-24 h-24 sm:w-28 sm:h-28 aspect-square object-cover object-center rounded-full ring-1 ring-stone-200/60 dark:ring-stone-700/60 transition-transform duration-300 group-hover:scale-[1.02]"
+                  src="/fotos/eliene_2.jpeg"
+                  alt="Eliene Matos Esteticista"
+                  class="w-28 h-28 sm:w-32 sm:h-32 aspect-square object-cover object-top rounded-full ring-2 ring-gold-400/60 transition-transform duration-300 group-hover:scale-[1.02]"
                   loading="eager"
-                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&h=500&q=85&crop=faces';"
+                  onerror="this.onerror=null; this.src='/fotos/eliene_1.jpeg';"
                 />
               </div>
 
-              <!-- Subtle Verification Badge -->
+              <!-- Selo Dourado de Profissional Verificada -->
               <span
-                id="verificationBadge"
-                class="absolute bottom-1 right-1 bg-champagne-500 dark:bg-champagne-600 text-white p-1 rounded-full shadow-md border-2 border-white dark:border-[#16181C] flex items-center justify-center hover:scale-110 transition-transform"
-                title="Profissional Verificada"
+                class="absolute bottom-1 right-1 bg-gradient-to-tr from-gold-600 via-gold-400 to-gold-300 text-stone-950 p-1.5 rounded-full shadow-md border-2 border-white dark:border-[#141619] flex items-center justify-center hover:scale-110 transition-transform"
+                title="Profissional Especialista"
               >
-                <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
               </span>
             </div>
 
-          <!-- Professional Name & Headline -->
-          <div class="mt-3.5 space-y-0.5">
-            <h1 id="profileName" class="font-serif-luxury text-2xl sm:text-[26px] font-bold tracking-tight text-graphite-900 dark:text-stone-50 leading-tight transition-colors">
-              Dra. Helena Vasconcellos
-            </h1>
-            
-            <p id="profileSpecialty" class="text-xs uppercase tracking-widest text-champagne-700 dark:text-champagne-300 font-semibold pt-0.5 transition-colors">
-              Psicóloga Clínica & Psicoterapeuta
-            </p>
-            
-            <!-- Professional Registry & Credentials -->
-            <div id="profileRegistry" class="flex items-center justify-center gap-2 text-[11px] text-stone-500 dark:text-stone-400 font-medium pt-0.5 transition-colors">
-              <span>CRP 06/142980</span>
-              <span aria-hidden="true" class="text-stone-300 dark:text-stone-600">·</span>
-              <span>Mestre em Psicologia (USP)</span>
-            </div>
-          </div>
-
-          <!-- Mini Bio / Value Proposition (1-2 sentences) -->
-          <p id="profileBio" class="mt-3 text-xs leading-relaxed text-stone-600 dark:text-stone-300 max-w-[340px] font-normal px-2 transition-colors">
-            Acolhimento empático e psicoterapia fundamentada em evidências científicas para manejo de ansiedade, regulação emocional e autodesenvolvimento de alta performance.
-          </p>
-
-          <!-- Social Media Icons (High-end with Official Brand SVGs) -->
-          <div class="flex items-center justify-center gap-2.5 mt-4">
-            <!-- Instagram Oficial -->
-            <a
-              id="socialInstagram"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#E4405F] dark:hover:text-[#E4405F] hover:border-[#E4405F]/50 hover:scale-105 transition-all"
-              aria-label="Instagram Oficial"
-              title="Instagram Oficial"
+            <!-- Botão discreto para alternar entre as fotos de Eliene -->
+            <button
+              type="button"
+              onclick="togglePhoto()"
+              class="mt-2 text-[10px] text-stone-500 dark:text-gold-300/80 hover:text-gold-600 dark:hover:text-gold-200 flex items-center gap-1 bg-stone-100/70 dark:bg-white/5 border border-stone-200/50 dark:border-white/10 px-2.5 py-0.5 rounded-full transition-colors cursor-pointer"
             >
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-            </a>
+              <i data-lucide="image" class="w-3 h-3"></i>
+              <span id="photoToggleLabel">Ver foto de perfil</span>
+            </button>
 
-            <!-- LinkedIn Oficial -->
-            <a
-              id="socialLinkedIn"
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#0A66C2] dark:hover:text-[#0A66C2] hover:border-[#0A66C2]/50 hover:scale-105 transition-all"
-              aria-label="LinkedIn Oficial"
-              title="LinkedIn Oficial"
-            >
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-
-            <!-- YouTube Oficial -->
-            <a
-              id="socialYoutube"
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#FF0000] dark:hover:text-[#FF0000] hover:border-[#FF0000]/50 hover:scale-105 transition-all"
-              aria-label="YouTube Oficial"
-              title="Canal do YouTube Oficial"
-            >
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-              </svg>
-            </a>
-
-            <!-- E-mail Oficial -->
-            <a
-              id="socialEmail"
-              href="mailto:contato@drahelenavasconcellos.com.br"
-              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-champagne-600 dark:hover:text-champagne-300 hover:border-champagne-300 hover:scale-105 transition-all"
-              aria-label="E-mail de Contato"
-              title="E-mail de Contato"
-            >
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-            </a>
-
-            <!-- Spotify Oficial -->
-            <a
-              id="socialMediaExtra"
-              href="https://spotify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="w-9 h-9 rounded-full bg-white/85 dark:bg-[#16181C]/90 border border-stone-200/70 dark:border-stone-700/60 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-300 hover:text-[#1DB954] dark:hover:text-[#1DB954] hover:border-[#1DB954]/50 hover:scale-105 transition-all"
-              aria-label="Spotify Oficial"
-              title="Podcast Oficial no Spotify"
-            >
-              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
-              </svg>
-            </a>
-          </div>
-        </header>
-
-        <!-- 2. CHAMADA PRINCIPAL (DESTAQUE COM ÍCONE OFICIAL DO WHATSAPP) -->
-        <section class="w-full mb-5" aria-label="Ação Principal de Agendamento">
-          <a
-            id="mainCtaCard"
-            href="https://wa.me/5511998765432?text=Ol%C3%A1%2C%20Dra.%20Helena!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20agendamento%20de%20consulta."
-            target="_blank"
-            rel="noopener noreferrer"
-            class="relative overflow-hidden group block w-full p-4 rounded-2xl bg-gradient-to-r from-sage-800 via-sage-700 to-sage-800 dark:from-[#172722] dark:via-[#213830] dark:to-[#172722] text-white shadow-lg shadow-sage-900/15 dark:shadow-black/50 animate-subtle-pulse border border-sage-600/40 dark:border-emerald-500/30 transition-all duration-300 hover:shadow-xl hover:scale-[1.01]"
-          >
-            <!-- Animated gentle light shimmer -->
-            <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/15 dark:via-white/10 to-transparent animate-shimmer pointer-events-none"></div>
-
-            <div class="relative z-10 flex items-center justify-between">
-              <div class="flex items-center gap-3.5">
-                <!-- Ícone Oficial do WhatsApp com verde autêntico #25D366 -->
-                <div class="w-12 h-12 rounded-xl bg-[#25D366]/20 dark:bg-[#25D366]/25 flex items-center justify-center text-[#25D366] border border-[#25D366]/40 group-hover:bg-[#25D366]/30 group-hover:scale-105 transition-all shrink-0 shadow-sm">
-                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                  </svg>
-                </div>
-                <div class="text-left">
-                  <span id="ctaSubtitle" class="block text-[10px] font-semibold uppercase tracking-widest text-champagne-300">
-                    Atendimento Imediato
-                  </span>
-                  <span id="ctaTitle" class="font-serif-luxury text-lg sm:text-[19px] font-bold leading-tight block text-white">
-                    Falar Diretamente no WhatsApp
-                  </span>
-                  <span id="ctaDetails" class="block text-[11px] text-sage-100 dark:text-stone-300 font-light mt-0.5">
-                    Agendamento de consultas e esclarecimento de dúvidas
-                  </span>
-                </div>
+            <!-- Nome & Título Principal com Tipografia Editorial -->
+            <div class="mt-2.5 space-y-0.5">
+              <h1 class="font-serif-luxury text-3xl sm:text-[32px] font-bold tracking-tight text-stone-900 dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#FFF3D1] dark:via-[#E5C378] dark:to-[#C59B27] leading-tight">
+                Eliene Matos
+              </h1>
+              
+              <p class="text-xs uppercase tracking-widest text-gold-700 dark:text-gold-400 font-bold pt-0.5">
+                Estética Avançada & Cuidados Capilares
+              </p>
+              
+              <!-- Formação & Credenciais Oficiais -->
+              <div class="flex flex-wrap items-center justify-center gap-1.5 text-[11px] text-stone-600 dark:text-stone-300 font-medium pt-1">
+                <span>Tecnóloga em Estética e Cosmética</span>
+                <span aria-hidden="true" class="text-gold-400">·</span>
+                <span>Pedagoga</span>
+                <span aria-hidden="true" class="text-gold-400">·</span>
+                <span>Graduanda em Farmácia</span>
               </div>
-              <div class="flex items-center gap-1">
+            </div>
+
+            <!-- Proposta de Valor / Bio -->
+            <p class="mt-2.5 text-xs leading-relaxed text-stone-600 dark:text-stone-300 max-w-[360px] font-normal px-2">
+              Transformando a beleza e elevando a autoestima feminina há mais de <strong>26 anos</strong>. Protocolos faciais, terapia capilar e atendimento com hora marcada em Goiânia.
+            </p>
+
+            <!-- Ícones Oficiais das Redes Sociais & Contatos -->
+            <div class="flex items-center justify-center gap-2 mt-3.5">
+              <!-- Instagram Oficial -->
+              <a
+                href="https://www.instagram.com/eliene_estetica/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-full bg-white/90 dark:bg-[#16181C] border border-stone-200 dark:border-gold-400/30 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-200 hover:text-[#E4405F] dark:hover:text-[#E4405F] hover:border-[#E4405F]/50 hover:scale-105 transition-all"
+                aria-label="Instagram @eliene_estetica"
+                title="Instagram @eliene_estetica"
+              >
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+
+              <!-- WhatsApp Oficial -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Vim%20pelo%20seu%20Link%20da%20Bio%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-full bg-white/90 dark:bg-[#16181C] border border-stone-200 dark:border-gold-400/30 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-200 hover:text-[#25D366] dark:hover:text-[#25D366] hover:border-[#25D366]/50 hover:scale-105 transition-all"
+                aria-label="WhatsApp (62) 99939-8040"
+                title="WhatsApp (62) 99939-8040"
+              >
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+              </a>
+
+              <!-- Google Maps Oficial -->
+              <a
+                href="https://share.google/2A8niQe8H1Jh1a2Py"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-9 h-9 rounded-full bg-white/90 dark:bg-[#16181C] border border-stone-200 dark:border-gold-400/30 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-200 hover:text-[#4285F4] dark:hover:text-[#4285F4] hover:border-[#4285F4]/50 hover:scale-105 transition-all"
+                aria-label="Localização no Google Maps"
+                title="Google Maps: Eliene Mattos Estética"
+              >
+                <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </a>
+
+              <!-- E-mail / Contato -->
+              <a
+                href="mailto:elienemattosestetica@gmail.com"
+                class="w-9 h-9 rounded-full bg-white/90 dark:bg-[#16181C] border border-stone-200 dark:border-gold-400/30 shadow-xs flex items-center justify-center text-stone-700 dark:text-stone-200 hover:text-gold-600 dark:hover:text-gold-300 hover:border-gold-400 hover:scale-105 transition-all"
+                aria-label="E-mail de Contato"
+                title="E-mail de Contato"
+              >
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </header>
+
+          <!-- 2. DESTAQUE PRINCIPAL: AGENDAMENTO DIRETO NO WHATSAPP -->
+          <section class="w-full mb-5" aria-label="Ação Principal de Agendamento">
+            <div
+              class="relative overflow-hidden group block w-full p-4 rounded-2xl bg-gradient-to-r from-[#173024] via-[#0E2017] to-[#142A20] text-white shadow-xl shadow-black/40 border border-gold-400/40 animate-pulse-gold transition-all duration-300 hover:shadow-2xl hover:scale-[1.01]"
+            >
+              <!-- Shimmer de iluminação dourada metálica -->
+              <div class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-gold-400/15 to-transparent animate-shimmer pointer-events-none"></div>
+
+              <div class="relative z-10 flex items-center justify-between">
+                <a
+                  href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Vim%20pelo%20seu%20Link%20da%20Bio%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex items-center gap-3.5 flex-1 cursor-pointer"
+                >
+                  <!-- Ícone Oficial do WhatsApp com verde autêntico e brilho -->
+                  <div class="w-12 h-12 rounded-xl bg-[#25D366]/20 flex items-center justify-center text-[#25D366] border border-[#25D366]/50 group-hover:bg-[#25D366]/30 group-hover:scale-105 transition-all shrink-0 shadow-sm">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                  </div>
+                  <div class="text-left">
+                    <span class="block text-[10px] font-bold uppercase tracking-widest text-gold-300">
+                      Atendimento Personalizado
+                    </span>
+                    <span class="font-serif-luxury text-lg sm:text-[19px] font-bold leading-tight block text-white group-hover:text-gold-200 transition-colors">
+                      Agendar Horário no WhatsApp
+                    </span>
+                    <span class="block text-[11px] text-emeraldBrand-100 font-light mt-0.5">
+                      (62) 99939-8040 · Resposta rápida
+                    </span>
+                  </div>
+                </a>
+
+                <!-- Botão Agendar com Opções de Procedimento -->
                 <button
                   type="button"
-                  onclick="event.preventDefault(); event.stopPropagation(); openBookingModal();"
-                  class="px-2.5 py-1.5 rounded-lg bg-white/15 dark:bg-white/10 hover:bg-white/25 dark:hover:bg-white/20 text-white text-[11px] font-medium border border-white/20 dark:border-white/10 transition-all flex items-center gap-1 active:scale-95"
+                  onclick="openBookingModal()"
+                  class="ml-2 px-3 py-2 rounded-xl bg-gold-500/20 hover:bg-gold-500/35 border border-gold-400/40 text-gold-200 text-xs font-semibold transition-all flex items-center gap-1.5 active:scale-95 shrink-0 cursor-pointer shadow-sm"
                   title="Personalizar mensagem de agendamento"
                 >
-                  <span>Agendar</span>
                   <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
+                  <span class="hidden xs:inline">Opções</span>
                 </button>
               </div>
             </div>
-          </a>
-        </section>
+          </section>
 
-        <!-- 3. SEÇÃO DE LINKS E SERVIÇOS -->
-        <section class="w-full space-y-3 mb-5" aria-label="Serviços e Links Especializados">
-          <div class="flex items-center justify-between px-1 mb-1">
-            <h2 class="text-[11px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
-              Serviços & Atendimentos
-            </h2>
-            <span class="text-[11px] text-stone-400 dark:text-stone-500">Modalidades</span>
-          </div>
+          <!-- 3. LISTA DE SERVIÇOS & PROCEDIMENTOS OFICIAIS -->
+          <section class="w-full space-y-2.5 mb-5" aria-label="Serviços Oficiais de Eliene Matos">
+            <div class="flex items-center justify-between px-1 mb-1">
+              <h2 class="text-[11px] font-bold uppercase tracking-widest text-stone-500 dark:text-gold-400/90 flex items-center gap-1.5">
+                <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i>
+                Procedimentos & Tratamentos
+              </h2>
+              <span class="text-[10px] text-stone-400 dark:text-stone-400">Hora Marcada</span>
+            </div>
 
-          <div id="servicesContainer" class="space-y-3">
-            <!-- Dynamically populated via JavaScript for seamless niche switching & theme support -->
-          </div>
-        </section>
-
-        <!-- 4. RECURSOS EXTRAS DIFERENCIADOS -->
-        <section class="w-full space-y-3 mb-6" aria-label="Informações Adicionais">
-          <div class="flex items-center justify-between px-1 mb-1">
-            <h2 class="text-[11px] font-semibold uppercase tracking-widest text-stone-500 dark:text-stone-400">
-              Conheça Mais
-            </h2>
-            <span class="text-[11px] text-stone-400 dark:text-stone-500">Sobre & Consultório</span>
-          </div>
-
-          <!-- 4.1 Mini Seção Sobre (Card Retrátil / Sanfona Rápida) -->
-          <div class="glass-card rounded-2xl overflow-hidden shadow-xs border border-stone-200/80 dark:border-stone-800 transition-colors">
-            <button
-              type="button"
-              onclick="toggleAboutAccordion()"
-              class="w-full p-3.5 flex items-center justify-between text-left hover:bg-stone-50/70 dark:hover:bg-white/5 transition-colors"
-              id="accordionAboutBtn"
-              aria-expanded="false"
+            <!-- Serviço 1: Limpeza de Pele Profunda -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20agendamento%20para%20a%20Limpeza%20de%20Pele%20Profunda."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
             >
               <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-champagne-50 dark:bg-white/5 border border-champagne-200/80 dark:border-white/10 text-champagne-700 dark:text-champagne-300 flex items-center justify-center shrink-0">
-                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="sparkles" class="w-5 h-5"></i>
                 </div>
-                <div>
-                  <h3 id="aboutHeaderTitle" class="font-serif-luxury text-base font-bold text-graphite-900 dark:text-stone-100">
-                    Sobre Mim & Trajetória
-                  </h3>
-                  <p id="aboutHeaderSubtitle" class="text-[11px] text-stone-500 dark:text-stone-400">
-                    Formação acadêmica, abordagem e diferenciais
+                <div class="text-left">
+                  <div class="flex items-center gap-2">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Limpeza de Pele Profunda & Peeling
+                    </h3>
+                  </div>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Extração criteriosa sem dor, alta frequência e revitalização celular com dermocosméticos
                   </p>
                 </div>
               </div>
-              <div class="w-6 h-6 rounded-full bg-stone-100 dark:bg-white/10 flex items-center justify-center text-stone-500 dark:text-stone-300 transition-transform duration-300" id="accordionArrow">
-                <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-gold-600 dark:text-gold-300 font-semibold px-2 py-0.5 rounded-full bg-gold-400/15">Mais Pedido</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
               </div>
-            </button>
+            </a>
 
-            <!-- Expanded Content -->
-            <div id="aboutContent" class="hidden px-4 pb-4 pt-1 text-xs text-stone-600 dark:text-stone-300 space-y-2.5 border-t border-stone-100/80 dark:border-stone-800">
-              <div id="aboutTextDetails" class="space-y-2 leading-relaxed">
-                <!-- Injected via JS -->
-              </div>
-              
-              <!-- Metrics / Credentials Badges -->
-              <div id="aboutMetrics" class="grid grid-cols-2 gap-2 pt-1 text-[11px]">
-                <!-- Injected via JS -->
-              </div>
-            </div>
-          </div>
-
-          <!-- 4.2 Localização / Consultório Presencial com Google Maps -->
-          <div class="glass-card rounded-2xl p-4 shadow-xs border border-stone-200/80 dark:border-stone-800 relative overflow-hidden transition-colors">
-            <div class="flex items-start gap-3">
-              <div class="w-10 h-10 rounded-xl bg-sage-50 dark:bg-white/5 text-sage-700 dark:text-sage-200 border border-sage-200/80 dark:border-white/10 flex items-center justify-center shrink-0">
-                <i data-lucide="map-pin" class="w-5 h-5"></i>
-              </div>
-              <div class="flex-1 text-left">
-                <div class="flex items-center justify-between">
-                  <h3 id="officeTitle" class="font-serif-luxury text-base font-bold text-graphite-900 dark:text-stone-100">
-                    Consultório Presencial
+            <!-- Serviço 2: Design de Sobrancelha & Micropigmentação -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20Design%20de%20Sobrancelhas%20%2F%20Micropigmenta%C3%A7%C3%A3o."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="eye" class="w-5 h-5"></i>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                    Design de Sobrancelhas & Micropigmentação
                   </h3>
-                  <span id="officeDistrict" class="text-[10px] uppercase font-semibold tracking-wider text-sage-700 dark:text-champagne-300 bg-sage-50 dark:bg-white/5 px-2 py-0.5 rounded-md border border-sage-200/60 dark:border-white/10">
-                    Jardins · SP
-                  </span>
-                </div>
-                <p id="officeAddress" class="text-xs text-stone-600 dark:text-stone-300 mt-1 leading-snug">
-                  Edifício Infinity Jardins · Alameda Santos, 1800 — Conj. 142
-                </p>
-                <p id="officeNotes" class="text-[11px] text-stone-400 dark:text-stone-400 mt-0.5">
-                  A 300m da Estação Trianon-Masp · Estacionamento com manobrista no local
-                </p>
-
-                <!-- Actions: Como Chegar e Copiar Endereço -->
-                <div class="mt-3 flex flex-wrap items-center gap-2">
-                  <a
-                    id="mapsLink"
-                    href="https://maps.google.com/?q=Alameda+Santos,+1800+-+Cerqueira+C%C3%A9sar,+S%C3%A3o+Paulo+-+SP"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-stone-900 dark:bg-champagne-500 hover:bg-stone-800 dark:hover:bg-champagne-400 text-white dark:text-stone-950 text-xs font-semibold shadow-xs transition-all active:scale-95"
-                  >
-                    <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
-                    <span>Como Chegar (Google Maps)</span>
-                  </a>
-                  <button
-                    type="button"
-                    onclick="copyAddress()"
-                    id="copyAddressBtn"
-                    class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-white/5 hover:bg-stone-50 dark:hover:bg-white/10 border border-stone-200 dark:border-stone-700 text-stone-700 dark:text-stone-200 text-xs font-medium transition-all active:scale-95"
-                  >
-                    <i data-lucide="copy" class="w-3.5 h-3.5" id="copyAddressIcon"></i>
-                    <span id="copyAddressText">Copiar Endereço</span>
-                  </button>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Visagismo facial e harmonização do olhar com técnica personalizada e natural
+                  </p>
                 </div>
               </div>
-            </div>
-          </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Olhar</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+              </div>
+            </a>
 
-          <!-- 4.3 Chave Pix Rápida com Feedback Instantâneo -->
-          <div class="glass-card rounded-2xl p-4 shadow-xs border border-champagne-200/70 dark:border-champagne-500/20 bg-gradient-to-br from-white via-white to-champagne-50/40 dark:from-[#16181C] dark:via-[#16181C] dark:to-[#1E1B15] transition-colors">
-            <div class="flex items-center justify-between mb-2">
-              <div class="flex items-center gap-2">
-                <div class="w-7 h-7 rounded-lg bg-champagne-100 dark:bg-champagne-500/15 text-champagne-700 dark:text-champagne-300 flex items-center justify-center border border-champagne-200 dark:border-champagne-500/30">
-                  <i data-lucide="wallet" class="w-4 h-4"></i>
+            <!-- Serviço 3: Terapia Capilar & Reestruturação -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20de%20Terapia%20Capilar%20e%20Reestrutura%C3%A7%C3%A3o%20dos%20Fios."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-emeraldBrand-500/15 border border-emeraldBrand-500/30 text-emerald-600 dark:text-emerald-300 flex items-center justify-center group-hover:bg-emeraldBrand-600 group-hover:text-white transition-colors shrink-0">
+                  <i data-lucide="heart-pulse" class="w-5 h-5"></i>
                 </div>
-                <span class="text-xs font-semibold text-graphite-900 dark:text-stone-100">
-                  Chave Pix para Honorários & Consultas
-                </span>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
+                    Terapia Capilar & Reestruturação
+                  </h3>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Saúde do couro cabeludo, reposição de massa, combate à quebra e brilho espelhado
+                  </p>
+                </div>
               </div>
-              <span id="pixBankName" class="text-[10px] font-medium text-stone-400 dark:text-stone-400">Banco C6 · Titular</span>
-            </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-emerald-600 dark:text-emerald-300 font-semibold px-2 py-0.5 rounded-full bg-emeraldBrand-500/15">Capilar</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-emerald-400 transition-colors"></i>
+              </div>
+            </a>
 
-            <div class="p-2.5 rounded-xl bg-stone-50/90 dark:bg-black/30 border border-stone-200/80 dark:border-stone-800 flex items-center justify-between gap-2">
-              <div class="truncate text-left">
-                <span class="block text-[10px] text-stone-400 dark:text-stone-400 font-medium uppercase tracking-wider">Chave Pix:</span>
-                <span class="font-mono text-xs text-graphite-800 dark:text-champagne-200 font-semibold select-all" id="pixKeyText">
-                  pix@drahelenavasconcellos.com.br
-                </span>
+            <!-- Serviço 4: Mechas & Loiros de Alto Padrão -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Tenho%20interesse%20em%20fazer%20Mechas%20%2F%20Loiro%20Personalizado."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="sun-medium" class="w-5 h-5"></i>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                    Loiros Saudáveis & Mechas Iluminadas
+                  </h3>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Colorimetria avançada com proteção absoluta da integridade da fibra capilar
+                  </p>
+                </div>
               </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Loiros</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+              </div>
+            </a>
+
+            <!-- Serviço 5: Cortes Personalizados & Visagismo -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20Corte%20Feminino%20Personalizado."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="scissors" class="w-5 h-5"></i>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                    Cortes Femininos & Alinhamento de Pontas
+                  </h3>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Cortes que valorizam o movimento natural, o caimento e o seu estilo único
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Visagismo</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+              </div>
+            </a>
+
+            <!-- Serviço 6: Mega Hair & Alongamento -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Mega%20Hair%20e%20Alongamento."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="wand-2" class="w-5 h-5"></i>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                    Mega Hair & Preenchimento de Pontas
+                  </h3>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Extensão capilar segura com acabamento imperceptível e volume deslumbrante
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Volume</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+              </div>
+            </a>
+
+            <!-- Serviço 7: Depilação Feminina -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20Depila%C3%A7%C3%A3o%20Feminina."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="feather" class="w-5 h-5"></i>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                    Depilação Feminina com Biossegurança
+                  </h3>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Higiene rigorosa, método suave e protocolo pós-depilatório calmante
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Suavidade</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+              </div>
+            </a>
+
+            <!-- Serviço 8: Spa dos Pés & Manicure -->
+            <a
+              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20Spa%20dos%20P%C3%A9s%20%2F%20Manicure."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+            >
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                  <i data-lucide="smile" class="w-5 h-5"></i>
+                </div>
+                <div class="text-left">
+                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                    Spa dos Pés & Cuidados Especiais
+                  </h3>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                    Esfoliação relaxante, renovação da maciez e hidratação nutritiva profunda
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 shrink-0">
+                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Spa</span>
+                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+              </div>
+            </a>
+          </section>
+
+          <!-- 4. SOBRE MIM & TRAJETÓRIA (CARD RETRÁTIL ELEGANTE) -->
+          <section class="w-full mb-4" aria-label="Sobre Eliene Matos">
+            <div class="glass-card rounded-2xl overflow-hidden shadow-xs border border-gold-400/25 transition-colors">
               <button
                 type="button"
-                id="copyPixBtn"
-                onclick="copyPixKey()"
-                class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-champagne-500 hover:bg-champagne-600 dark:bg-champagne-500 dark:hover:bg-champagne-400 active:scale-95 text-white dark:text-stone-950 text-xs font-semibold shadow-xs transition-all"
+                onclick="toggleAboutAccordion()"
+                class="w-full p-3.5 flex items-center justify-between text-left hover:bg-stone-50/70 dark:hover:bg-white/5 transition-colors cursor-pointer"
+                id="accordionAboutBtn"
+                aria-expanded="false"
               >
-                <i data-lucide="copy" class="w-3.5 h-3.5" id="pixCopyIcon"></i>
-                <span id="pixCopyBtnText">Copiar</span>
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/15 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center shrink-0">
+                    <i data-lucide="award" class="w-5 h-5"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-gold-200">
+                      Conheça Eliene Matos
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300">
+                      26+ anos de experiência, formação e diferenciais
+                    </p>
+                  </div>
+                </div>
+                <div class="w-6 h-6 rounded-full bg-stone-100 dark:bg-white/10 flex items-center justify-center text-stone-500 dark:text-gold-300 transition-transform duration-300" id="accordionArrow">
+                  <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                </div>
               </button>
+
+              <!-- Conteúdo Expandido -->
+              <div id="aboutContent" class="hidden px-4 pb-4 pt-1 text-xs text-stone-600 dark:text-stone-300 space-y-2.5 border-t border-stone-100 dark:border-white/5">
+                <div class="space-y-2 leading-relaxed text-stone-600 dark:text-stone-300">
+                  <p>
+                    Sou <strong>Eliene Matos</strong>, tecnóloga em <strong>Estética e Cosmética</strong>, pedagoga e graduanda em <strong>Farmácia</strong>. Dedico minha vida à beleza, à autoestima e à saúde da mulher há mais de <strong>26 anos</strong>.
+                  </p>
+                  <p>
+                    Meu compromisso é oferecer um atendimento acolhedor, onde cada procedimento é realizado com rigor técnico, biossegurança máxima e cosméticos de alta performance. Seja para renovar sua pele ou recuperar o brilho e a força do seu cabelo, seu momento aqui é único.
+                  </p>
+                </div>
+
+                <!-- Métricas & Destaques de Trajetória -->
+                <div class="grid grid-cols-2 gap-2 pt-1 text-[11px]">
+                  <div class="p-2 rounded-xl bg-stone-50 dark:bg-white/5 border border-gold-400/20 text-left">
+                    <span class="block font-bold text-gold-700 dark:text-gold-300">26+ Anos</span>
+                    <span class="text-stone-500 dark:text-stone-400">Na área da beleza</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-stone-50 dark:bg-white/5 border border-gold-400/20 text-left">
+                    <span class="block font-bold text-gold-700 dark:text-gold-300">Goiânia - GO</span>
+                    <span class="text-stone-500 dark:text-stone-400">Setor Aeroporto</span>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <!-- Selo de Ética e Privacidade Profissional -->
-        <section class="w-full glass-card rounded-2xl p-4 shadow-xs border border-stone-200/70 dark:border-stone-800 mb-6 text-left transition-colors">
-          <div class="flex items-center gap-2 mb-1.5 text-champagne-600 dark:text-champagne-300">
-            <i data-lucide="shield-check" class="w-4 h-4"></i>
-            <span id="ethicsHeader" class="text-xs font-bold tracking-wide uppercase text-graphite-800 dark:text-stone-100">
-              Compromisso Ético & Sigilo Profissional
-            </span>
-          </div>
-          <p id="ethicsText" class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed">
-            Atendimento em conformidade com o Código de Ética Profissional. Ambiente clínico seguro, com sigilo rigoroso e plataformas certificadas com criptografia de ponta a ponta.
-          </p>
-        </section>
+          <!-- 5. LOCALIZAÇÃO & HORÁRIO DE ATENDIMENTO (GOOGLE MAPS) -->
+          <section class="w-full mb-4" aria-label="Localização e Horários">
+            <div class="glass-card rounded-2xl p-4 shadow-xs border border-gold-400/25 relative overflow-hidden transition-colors">
+              <div class="flex items-start gap-3">
+                <div class="w-10 h-10 rounded-xl bg-emeraldBrand-500/15 text-emerald-600 dark:text-emerald-300 border border-emeraldBrand-500/30 flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div class="flex-1 text-left">
+                  <div class="flex items-center justify-between">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100">
+                      Espaço & Localização
+                    </h3>
+                    <span class="text-[10px] uppercase font-semibold tracking-wider text-emerald-700 dark:text-gold-300 bg-emeraldBrand-50 dark:bg-white/5 px-2 py-0.5 rounded-md border border-emeraldBrand-500/20">
+                      St. Aeroporto
+                    </span>
+                  </div>
+                  <p class="text-xs text-stone-700 dark:text-stone-200 mt-1 font-medium leading-snug">
+                    Rua 32-A, nº 453 — Setor Aeroporto
+                  </p>
+                  <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-0.5">
+                    Goiânia - GO · CEP 74075-220
+                  </p>
 
-        <!-- Footer com Informações Legais -->
-        <footer class="w-full text-center text-stone-400 dark:text-stone-500 text-[11px] space-y-1.5 pt-2 border-t border-stone-200/50 dark:border-stone-800 transition-colors">
-          <p id="footerTitle" class="font-medium text-stone-600 dark:text-stone-300">
-            Dra. Helena Vasconcellos · Psicologia Clínica
-          </p>
-          <p id="footerRegistry">
-            CRP 06/142980 · São Paulo - SP
-          </p>
-          <p class="text-[10px] text-stone-400 dark:text-stone-500 pt-1">
-            Bio Profissional de Alto Padrão · Todos os direitos reservados © 2026
-          </p>
-        </footer>
-      </main>
+                  <!-- Horários de Funcionamento Extraídos -->
+                  <div class="mt-2.5 p-2 rounded-xl bg-stone-50 dark:bg-black/30 border border-stone-200/60 dark:border-white/10 text-[11px] space-y-1">
+                    <div class="flex items-center justify-between">
+                      <span class="text-stone-500 dark:text-stone-400 flex items-center gap-1">
+                        <i data-lucide="clock" class="w-3 h-3 text-gold-400"></i>
+                        Terça a Sábado:
+                      </span>
+                      <span class="font-semibold text-stone-800 dark:text-stone-200">08:30 às 18:30</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-stone-500 dark:text-stone-400">Domingo e Segunda:</span>
+                      <span class="text-stone-400 dark:text-stone-400">Fechado</span>
+                    </div>
+                  </div>
+
+                  <!-- Ações: Rota no Google Maps e Copiar Endereço -->
+                  <div class="mt-3 flex flex-wrap items-center gap-2">
+                    <a
+                      href="https://share.google/2A8niQe8H1Jh1a2Py"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-stone-900 via-stone-800 to-stone-900 dark:from-gold-500 dark:to-gold-600 hover:opacity-90 text-white dark:text-stone-950 text-xs font-semibold shadow-xs transition-all active:scale-95"
+                    >
+                      <i data-lucide="navigation" class="w-3.5 h-3.5"></i>
+                      <span>Como Chegar (Google Maps)</span>
+                    </a>
+                    <button
+                      type="button"
+                      onclick="copyAddress()"
+                      id="copyAddressBtn"
+                      class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white dark:bg-white/5 hover:bg-stone-50 dark:hover:bg-white/10 border border-stone-200 dark:border-stone-700 text-stone-700 dark:text-stone-200 text-xs font-medium transition-all active:scale-95 cursor-pointer"
+                    >
+                      <i data-lucide="copy" class="w-3.5 h-3.5" id="copyAddressIcon"></i>
+                      <span id="copyAddressText">Copiar</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- 6. CHAVE PIX PARA SINAL OU PAGAMENTO DE PROCEDIMENTOS -->
+          <section class="w-full mb-4" aria-label="Chave Pix">
+            <div class="glass-card rounded-2xl p-4 shadow-xs border border-gold-400/25 bg-gradient-to-br from-white via-white to-gold-50/30 dark:from-[#13161A] dark:via-[#13161A] dark:to-[#1B180F] transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                  <div class="w-7 h-7 rounded-lg bg-gold-400/15 text-gold-600 dark:text-gold-300 flex items-center justify-center border border-gold-400/30">
+                    <i data-lucide="wallet" class="w-4 h-4"></i>
+                  </div>
+                  <span class="text-xs font-semibold text-stone-900 dark:text-stone-100">
+                    Chave Pix para Sinal & Procedimentos
+                  </span>
+                </div>
+                <span class="text-[10px] font-medium text-stone-400 dark:text-gold-400/80">Eliene Matos</span>
+              </div>
+
+              <div class="p-2.5 rounded-xl bg-stone-50/90 dark:bg-black/35 border border-stone-200/80 dark:border-white/10 flex items-center justify-between gap-2">
+                <div class="truncate text-left">
+                  <span class="block text-[10px] text-stone-400 dark:text-stone-400 font-medium uppercase tracking-wider">Telefone Celular:</span>
+                  <span class="font-mono text-xs text-stone-800 dark:text-gold-200 font-bold select-all" id="pixKeyText">
+                    (62) 99939-8040
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  id="copyPixBtn"
+                  onclick="copyPixKey()"
+                  class="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gold-500 hover:bg-gold-600 active:scale-95 text-stone-950 text-xs font-bold shadow-xs transition-all cursor-pointer"
+                >
+                  <i data-lucide="copy" class="w-3.5 h-3.5" id="pixCopyIcon"></i>
+                  <span id="pixCopyBtnText">Copiar</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- 7. COMPROMISSO DE BIOSSEGURANÇA & HIGIENE -->
+          <section class="w-full glass-card rounded-2xl p-4 shadow-xs border border-gold-400/20 mb-5 text-left transition-colors">
+            <div class="flex items-center gap-2 mb-1.5 text-gold-600 dark:text-gold-300">
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+              <span class="text-xs font-bold tracking-wide uppercase text-stone-800 dark:text-stone-100">
+                Biossegurança & Excelência
+              </span>
+            </div>
+            <p class="text-xs text-stone-600 dark:text-stone-300 leading-relaxed">
+              Materiais 100% esterilizados em autoclave, insumos descartáveis e cosméticos de alta performance testados dermatologicamente. Seu bem-estar e sua segurança em primeiro lugar.
+            </p>
+          </section>
+
+          <!-- Footer Oficial -->
+          <footer class="w-full text-center text-stone-400 dark:text-stone-400 text-[11px] space-y-1.5 pt-2 border-t border-stone-200/50 dark:border-white/5 transition-colors">
+            <div class="w-8 h-8 rounded-full mx-auto overflow-hidden border border-gold-400/40 mb-1 opacity-80">
+              <img src="/fotos/logo.png" alt="Eliene Matos" class="w-full h-full object-cover" />
+            </div>
+            <p class="font-medium text-stone-700 dark:text-gold-200">
+              Eliene Matos · Estética & Beleza Feminina
+            </p>
+            <p class="text-[10px] text-stone-500 dark:text-stone-400">
+              Rua 32-A, 453 - Setor Aeroporto · Goiânia - GO
+            </p>
+            <p class="text-[10px] text-stone-400 dark:text-stone-400 pt-1">
+              Todos os direitos reservados © 2026
+            </p>
+          </footer>
+        </main>
       </div>
     </div>
 
@@ -679,41 +849,41 @@
       class="fixed top-5 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 -translate-y-4 scale-95"
       role="alert"
     >
-      <div class="px-4 py-2.5 rounded-full bg-stone-900/95 dark:bg-[#1C1F24]/95 text-white text-xs font-medium shadow-2xl backdrop-blur-md flex items-center gap-2 border border-stone-700/60 dark:border-stone-600/60">
+      <div class="px-4 py-2.5 rounded-full bg-stone-900/95 dark:bg-[#181B20]/95 text-white text-xs font-medium shadow-2xl backdrop-blur-md flex items-center gap-2 border border-gold-400/40">
         <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
         <span id="toastMessage">Texto copiado!</span>
       </div>
     </div>
 
-    <!-- MODAL DE AGENDAMENTO RÁPIDO VIA WHATSAPP -->
+    <!-- MODAL DE AGENDAMENTO RÁPIDO VIA WHATSAPP COM ESCOLHA DE SERVIÇO -->
     <div
       id="bookingModal"
-      class="fixed inset-0 z-50 bg-stone-950/60 dark:bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity"
+      class="fixed inset-0 z-50 bg-stone-950/70 dark:bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity"
       onclick="if(event.target === this) closeBookingModal()"
     >
-      <div class="bg-white dark:bg-[#16181C] rounded-3xl p-5 sm:p-6 max-w-sm w-full shadow-2xl border border-stone-200 dark:border-stone-800 transform transition-all text-left">
+      <div class="bg-white dark:bg-[#14161A] rounded-3xl p-5 sm:p-6 max-w-sm w-full shadow-2xl border border-gold-400/30 transform transition-all text-left">
         <div class="flex items-center justify-between mb-3">
           <div class="flex items-center gap-2">
-            <div class="w-8 h-8 rounded-lg bg-[#25D366]/15 dark:bg-[#25D366]/20 text-[#25D366] flex items-center justify-center border border-[#25D366]/30">
+            <div class="w-8 h-8 rounded-lg bg-[#25D366]/20 text-[#25D366] flex items-center justify-center border border-[#25D366]/30">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
             </div>
-            <h3 class="font-serif-luxury text-lg font-bold text-graphite-900 dark:text-stone-50">
-              Agendar no WhatsApp
+            <h3 class="font-serif-luxury text-lg font-bold text-stone-900 dark:text-gold-200">
+              Agendamento com Eliene
             </h3>
           </div>
           <button
             type="button"
             onclick="closeBookingModal()"
-            class="text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 p-1 rounded-lg"
+            class="text-stone-400 hover:text-stone-700 dark:hover:text-stone-200 p-1 rounded-lg cursor-pointer"
           >
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
 
         <p class="text-xs text-stone-500 dark:text-stone-400 mb-4">
-          Escolha os detalhes para gerar sua mensagem personalizada:
+          Preencha para gerar sua mensagem personalizada e iniciar a conversa no WhatsApp:
         </p>
 
         <form onsubmit="handleSendWhatsApp(event)" class="space-y-3.5">
@@ -724,49 +894,51 @@
             <input
               type="text"
               id="bookingClientName"
-              placeholder="Ex: Mariana Silva"
+              placeholder="Ex: Ana Paula"
               required
-              class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-white/5 border border-stone-200 dark:border-stone-700 text-graphite-900 dark:text-stone-100 focus:outline-hidden focus:border-sage-500 dark:focus:border-champagne-400 focus:ring-1 focus:ring-sage-500"
+              class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-white/5 border border-stone-200 dark:border-white/10 text-stone-900 dark:text-stone-100 focus:outline-hidden focus:border-gold-500 focus:ring-1 focus:ring-gold-500"
             />
           </div>
 
           <div>
             <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-600 dark:text-stone-300 mb-1">
-              Modalidade de Atendimento:
+              Procedimento de Interesse:
             </label>
             <select
-              id="bookingModality"
-              class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-[#1E2024] border border-stone-200 dark:border-stone-700 text-graphite-900 dark:text-stone-100 focus:outline-hidden focus:border-sage-500 dark:focus:border-champagne-400 focus:ring-1 focus:ring-sage-500"
+              id="bookingService"
+              class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-[#1A1C20] border border-stone-200 dark:border-white/10 text-stone-900 dark:text-stone-100 focus:outline-hidden focus:border-gold-500 focus:ring-1 focus:ring-gold-500"
             >
-              <option value="Online">Psicoterapia Online</option>
-              <option value="Presencial nos Jardins">Atendimento Presencial nos Jardins (SP)</option>
-              <option value="Avaliação / Programa Especial">Programa Específico / Avaliação</option>
+              <option value="Limpeza de Pele Profunda">Limpeza de Pele Profunda & Peeling</option>
+              <option value="Design de Sobrancelha / Micropigmentação">Design de Sobrancelha / Micropigmentação</option>
+              <option value="Terapia Capilar & Reestruturação">Terapia Capilar & Reestruturação</option>
+              <option value="Mechas / Loiro Saudável">Mechas & Loiros de Alto Padrão</option>
+              <option value="Corte Feminino & Visagismo">Corte Feminino & Visagismo</option>
+              <option value="Mega Hair / Alongamento">Mega Hair & Alongamento</option>
+              <option value="Depilação Feminina">Depilação Feminina</option>
+              <option value="Spa dos Pés / Manicure">Spa dos Pés & Manicure</option>
+              <option value="Outro Procedimento">Outro Procedimento / Avaliação</option>
             </select>
           </div>
 
           <div>
             <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone-600 dark:text-stone-300 mb-1">
-              Melhor Período para Sessões:
+              Período de Preferência:
             </label>
-            <div class="grid grid-cols-3 gap-2">
-              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-sage-700 dark:has-[:checked]:bg-champagne-500 has-[:checked]:text-white dark:has-[:checked]:text-stone-950 has-[:checked]:border-sage-700 dark:has-[:checked]:border-champagne-500 transition-all">
+            <div class="grid grid-cols-2 gap-2">
+              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-white/10 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-gold-500 has-[:checked]:text-stone-950 has-[:checked]:font-bold has-[:checked]:border-gold-500 transition-all">
                 <input type="radio" name="shift" value="Manhã" checked class="sr-only" />
-                Manhã
+                Manhã (08:30 - 12:00)
               </label>
-              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-sage-700 dark:has-[:checked]:bg-champagne-500 has-[:checked]:text-white dark:has-[:checked]:text-stone-950 has-[:checked]:border-sage-700 dark:has-[:checked]:border-champagne-500 transition-all">
+              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-white/10 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-gold-500 has-[:checked]:text-stone-950 has-[:checked]:font-bold has-[:checked]:border-gold-500 transition-all">
                 <input type="radio" name="shift" value="Tarde" class="sr-only" />
-                Tarde
-              </label>
-              <label class="cursor-pointer text-center p-2 rounded-xl border border-stone-200 dark:border-stone-700 bg-stone-50 dark:bg-white/5 text-[11px] font-medium text-stone-600 dark:text-stone-300 has-[:checked]:bg-sage-700 dark:has-[:checked]:bg-champagne-500 has-[:checked]:text-white dark:has-[:checked]:text-stone-950 has-[:checked]:border-sage-700 dark:has-[:checked]:border-champagne-500 transition-all">
-                <input type="radio" name="shift" value="Noite" class="sr-only" />
-                Noite
+                Tarde (13:30 - 18:30)
               </label>
             </div>
           </div>
 
           <button
             type="submit"
-            class="w-full mt-2 py-2.5 px-4 rounded-xl bg-sage-800 dark:bg-champagne-500 hover:bg-sage-700 dark:hover:bg-champagne-400 active:scale-98 text-white dark:text-stone-950 text-xs font-semibold shadow-md transition-all flex items-center justify-center gap-2"
+            class="w-full mt-2 py-2.5 px-4 rounded-xl bg-gold-500 hover:bg-gold-600 active:scale-98 text-stone-950 text-xs font-bold shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
           >
             <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
@@ -777,28 +949,27 @@
       </div>
     </div>
 
-    <!-- MODAL DO QR CODE (PARA COMPARTILHAMENTO FÍSICO / DESKTOP) -->
+    <!-- MODAL DO QR CODE (PARA COMPARTILHAR OU EXIBIR NO ESPAÇO) -->
     <div
       id="qrModal"
-      class="fixed inset-0 z-50 bg-stone-950/60 dark:bg-black/75 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity"
+      class="fixed inset-0 z-50 bg-stone-950/70 dark:bg-black/85 backdrop-blur-sm hidden items-center justify-center p-4 transition-opacity"
       onclick="if(event.target === this) toggleQRModal(false)"
     >
-      <div class="bg-white dark:bg-[#16181C] rounded-3xl p-6 max-w-xs w-full text-center shadow-2xl border border-stone-200 dark:border-stone-800 transform transition-all">
-        <div class="w-12 h-12 rounded-full bg-champagne-50 dark:bg-white/5 border border-champagne-200 dark:border-white/10 text-champagne-600 dark:text-champagne-300 mx-auto flex items-center justify-center mb-3">
-          <i data-lucide="qr-code" class="w-6 h-6"></i>
+      <div class="bg-white dark:bg-[#14161A] rounded-3xl p-6 max-w-xs w-full text-center shadow-2xl border border-gold-400/30 transform transition-all">
+        <div class="w-12 h-12 rounded-full overflow-hidden border border-gold-400 mx-auto mb-3 shadow-md">
+          <img src="/fotos/logo.png" alt="Eliene Matos" class="w-full h-full object-cover" />
         </div>
-        <h3 class="font-serif-luxury text-xl font-bold text-graphite-900 dark:text-stone-50">
-          QR Code do Perfil
+        <h3 class="font-serif-luxury text-xl font-bold text-stone-900 dark:text-gold-200">
+          QR Code de Eliene Matos
         </h3>
         <p class="text-xs text-stone-500 dark:text-stone-400 mt-1 mb-4">
-          Aponte a câmera do seu celular para abrir esta bio instantaneamente
+          Aponte a câmera do celular para abrir esta página instantaneamente
         </p>
         
-        <!-- QR Code com borda e contraste preservado para leitura por câmeras -->
         <div class="p-3 bg-white rounded-2xl border border-stone-200 shadow-sm inline-block mb-4">
           <img
             id="qrCodeImage"
-            src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fdrahelenavasconcellos.com.br&color=1a1b1c&bgcolor=ffffff"
+            src=""
             alt="QR Code"
             class="w-40 h-40 rounded-lg mx-auto"
             loading="lazy"
@@ -808,27 +979,59 @@
         <button
           type="button"
           onclick="toggleQRModal(false)"
-          class="w-full py-2.5 rounded-xl bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 text-xs font-semibold hover:bg-stone-800 dark:hover:bg-white transition-colors"
+          class="w-full py-2.5 rounded-xl bg-gold-500 text-stone-950 text-xs font-bold hover:bg-gold-600 transition-colors cursor-pointer"
         >
           Fechar
         </button>
       </div>
     </div>
 
-    <!-- JAVASCRIPT NATIVO AUTO-CONTIDO -->
+    <!-- JAVASCRIPT EXCLUSIVO E OTIMIZADO PARA ELIENE MATOS -->
     <script>
       // ==========================================
-      // CONTROLE GLOBAL DO TEMA CLARO / ESCURO
+      // DADOS OFICIAIS DE ELIENE MATOS
+      // ==========================================
+      const ELIENE_DATA = {
+        name: "Eliene Matos",
+        title: "Esteticista & Cabeleireira Especialista",
+        whatsapp: "5562999398040",
+        formattedPhone: "(62) 99939-8040",
+        instagram: "https://www.instagram.com/eliene_estetica/",
+        googleMaps: "https://share.google/2A8niQe8H1Jh1a2Py",
+        address: "Rua 32-A, nº 453 — Setor Aeroporto, Goiânia - GO, CEP 74075-220",
+        photos: [
+          "/fotos/eliene_2.jpeg", // Foto no espaço com o painel verde e logo dourado
+          "/fotos/eliene_1.jpeg"  // Foto com traje branco
+        ]
+      };
+
+      let currentPhotoIndex = 0;
+
+      function togglePhoto() {
+        currentPhotoIndex = (currentPhotoIndex + 1) % ELIENE_DATA.photos.length;
+        const avatar = document.getElementById('profileAvatar');
+        const label = document.getElementById('photoToggleLabel');
+        
+        avatar.style.opacity = '0.3';
+        setTimeout(() => {
+          avatar.src = ELIENE_DATA.photos[currentPhotoIndex];
+          avatar.style.opacity = '1';
+        }, 150);
+
+        if (label) {
+          label.textContent = currentPhotoIndex === 0 ? "Ver foto de perfil" : "Ver no espaço";
+        }
+      }
+
+      // ==========================================
+      // CONTROLE DE TEMA CLARO / NOTURNO (PADRÃO: DARK LUXURY)
       // ==========================================
       function initTheme() {
-        // Verifica preferência salva ou preferência do sistema
         const savedTheme = localStorage.getItem('preferred-theme');
-        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        
-        if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
-          setTheme('dark', false);
-        } else {
+        if (savedTheme === 'light') {
           setTheme('light', false);
+        } else {
+          setTheme('dark', false); // Padrão Dark que combina com a logomarca preta/dourada
         }
       }
 
@@ -841,23 +1044,19 @@
           localStorage.setItem('preferred-theme', 'dark');
           if (icon) {
             icon.setAttribute('data-lucide', 'sun');
-            icon.classList.add('text-champagne-300');
+            icon.classList.add('text-gold-400');
           }
-          if (notify) showToast("Modo noturno de alto contraste ativado");
+          if (notify) showToast("Modo noturno luxo ativado ✨");
         } else {
           root.classList.remove('dark');
           localStorage.setItem('preferred-theme', 'light');
           if (icon) {
             icon.setAttribute('data-lucide', 'moon');
-            icon.classList.remove('text-champagne-300');
+            icon.classList.remove('text-gold-400');
           }
-          if (notify) showToast("Modo claro editorial ativado");
+          if (notify) showToast("Modo claro ativado ☀️");
         }
 
-        // Atualizar estado do seletor de nicho de acordo com o tema
-        updateNicheUI();
-
-        // Reinicializar ícones
         if (window.lucide) {
           lucide.createIcons();
         }
@@ -869,423 +1068,7 @@
       }
 
       // ==========================================
-      // DADOS DOS PERFIS (Psicologia Clínica & Advocacia)
-      // ==========================================
-      const PROFILES = {
-        psychology: {
-          name: "Dra. Helena Vasconcellos",
-          title: "Psicóloga Clínica & Psicoterapeuta",
-          registry: "CRP 06/142980 · Mestre em Psicologia (USP)",
-          bio: "Acolhimento empático e psicoterapia fundamentada em evidências científicas para manejo de ansiedade, regulação emocional e autodesenvolvimento de alta performance.",
-          avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&h=500&q=85&crop=faces",
-          status: "Agenda Aberta · Atendimento Online e Presencial",
-          whatsapp: "5511998765432",
-          email: "contato@drahelenavasconcellos.com.br",
-          pixKey: "pix@drahelenavasconcellos.com.br",
-          bank: "Banco C6 · Helena Vasconcellos Psicologia",
-          address: "Edifício Infinity Jardins · Alameda Santos, 1800 — Conj. 142",
-          addressMapQuery: "Alameda+Santos,+1800+-+Cerqueira+César,+São+Paulo+-+SP",
-          district: "Jardins · SP",
-          neighborhoodNotes: "A 300m da Estação Trianon-Masp · Estacionamento com manobrista",
-          accentColor: "sage",
-          aboutHeader: "Sobre Mim & Formação Acadêmica",
-          aboutSubtitle: "10+ anos de prática clínica e pesquisa",
-          aboutTexts: [
-            "Graduada e mestre em Psicologia Clínica pela <strong>Universidade de São Paulo (USP)</strong>, com especialização em Terapia Cognitivo-Comportamental (TCC) pelo <strong>Hospital Israelita Albert Einstein</strong>.",
-            "Minha prática clínica combina o rigor científico das intervenções contemporâneas de 3ª onda (como a Terapia de Aceitação e Compromisso - ACT) com uma postura acolhedora, humana e atenta à singularidade de cada história de vida."
-          ],
-          metrics: [
-            { title: "4.000+ Horas", subtitle: "Atendimentos clínicos" },
-            { title: "Brasil & Exterior", subtitle: "Pacientes em 14 países" }
-          ],
-          services: [
-            {
-              title: "Psicoterapia Individual Online",
-              description: "Sessões estruturadas de 50 min em ambiente confidencial e criptografado",
-              icon: "video",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Psicoterapia%20Individual%20Online.",
-              badge: "Mais Buscado"
-            },
-            {
-              title: "Protocolo Ansiedade & Burnout",
-              description: "Intervenção focada em alta exigência, líderes e estresse crônico",
-              icon: "brain",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Protocolo%20de%20Manejo%20de%20Ansiedade%20e%20Burnout.",
-              badge: "Especialidade"
-            },
-            {
-              title: "Clube do Livro & Leituras Terapêuticas",
-              description: "Comunidade mensal com análises guiadas e reflexões de obras selecionadas",
-              icon: "book-open",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20participar%20do%20Clube%20do%20Livro%20Terap%C3%AAutico.",
-              badge: "Comunidade"
-            },
-            {
-              title: "Artigos & Ensaios Clínicos",
-              description: "Publicações sobre neurociências, relacionamentos e saúde emocional",
-              icon: "newspaper",
-              link: "https://medium.com",
-              badge: "Conteúdo"
-            }
-          ],
-          ethicsTitle: "Compromisso Ético & Sigilo Profissional",
-          ethicsText: "Atendimento estritamente regulamentado pelo Código de Ética do Psicólogo. Plataformas com criptografia ponta a ponta e sigilo clínico absoluto em todas as sessões virtuais ou presenciais.",
-          footer: "Dra. Helena Vasconcellos · Psicologia Clínica (CRP 06/142980)"
-        },
-        law: {
-          name: "Dra. Camila Siqueira",
-          title: "Advocacia Estratégica & Compliance",
-          registry: "OAB/SP 384.219 · Mestre em Direito Comercial (USP)",
-          bio: "Assessoria jurídica personalizada para líderes, empresas e patrimônios familiares, aliando rigor técnico, visão de negócios e soluções preventivas de alta eficiência.",
-          avatar: "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?auto=format&fit=crop&w=500&h=500&q=85&crop=faces",
-          status: "Consultoria Ativa · São Paulo, Faria Lima & Remoto",
-          whatsapp: "5511998765432",
-          email: "contato@camilasiqueira.adv.br",
-          pixKey: "pix@camilasiqueira.adv.br",
-          bank: "Banco Itaú Personnalité · Siqueira Sociedade de Advogados",
-          address: "Faria Lima Financial Tower · Av. Brig. Faria Lima, 3477 — 11º andar",
-          addressMapQuery: "Av.+Brigadeiro+Faria+Lima,+3477+-+Itaim+Bibi,+São+Paulo+-+SP",
-          district: "Itaim Bibi · SP",
-          neighborhoodNotes: "Edifício com heliponto e valet no local · Próximo ao Shopping JK Iguatemi",
-          accentColor: "navy",
-          aboutHeader: "Sobre Mim & Trajetória Jurídica",
-          aboutSubtitle: "12+ anos em contencioso e consultoria corporativa",
-          aboutTexts: [
-            "Graduada e mestre em Direito Comercial pela <strong>Faculdade de Direito do Largo São Francisco (USP)</strong>, com LL.M. em Direito Societário e Governança Corporativa pelo <strong>Insper</strong>.",
-            "Atuação consultiva e contenciosa especializada na prevenção de litígios, estruturação societária segura e proteção patrimonial de famílias empresárias e executivos."
-          ],
-          metrics: [
-            { title: "R$ 180M+", subtitle: "Em operações assessoradas" },
-            { title: "98% Êxito", subtitle: "Em soluções preventivas e acordos" }
-          ],
-          services: [
-            {
-              title: "Consultoria Societária & M&A",
-              description: "Assessoria estratégica para reorganizações societárias e contratos complexos",
-              icon: "briefcase",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Consultoria%20Societ%C3%A1ria.",
-              badge: "Corporativo"
-            },
-            {
-              title: "Planejamento Sucessório & Patrimonial",
-              description: "Estruturação de holdings e proteção legal para famílias empresárias",
-              icon: "shield",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20sobre%20Planejamento%20Patrimonial.",
-              badge: "Private"
-            },
-            {
-              title: "Pareceres Jurídicos & Compliance",
-              description: "Auditoria preventiva e análise de riscos regulatórios para empresas",
-              icon: "file-text",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20Parecer%20Jur%C3%ADdico.",
-              badge: "Estratégico"
-            },
-            {
-              title: "Artigos Jurídicos & Análises",
-              description: "Ensaios sobre direito dos negócios e jurisprudência dos Tribunais Superiores",
-              icon: "scale",
-              link: "https://linkedin.com",
-              badge: "Artigos"
-            }
-          ],
-          ethicsTitle: "Sigilo & Governança Jurídica",
-          ethicsText: "Atuação regida pelo Código de Ética e Disciplina da OAB. Garantia absoluta de inviolabilidade de comunicações e sigilo profissional estrito para todos os clientes e operações.",
-          footer: "Dra. Camila Siqueira · Advocacia & Consultoria Estratégica (OAB/SP 384.219)"
-        },
-        nutrition: {
-          name: "Dra. Larissa Fontana",
-          title: "Nutrição Clínica & Longevidade",
-          registry: "CRN-3 48.912 · Pós-Graduada pela USP & FMUSP",
-          bio: "Nutrição funcional e medicina do estilo de vida. Protocolos individualizados de saúde metabólica, modulação intestinal e longevidade ativa para alta performance física e mental.",
-          avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&h=500&q=85&crop=faces",
-          status: "Agenda Aberta · Atendimento Presencial e Online",
-          whatsapp: "5511998765432",
-          email: "contato@dralarissafontana.com.br",
-          pixKey: "pix@dralarissafontana.com.br",
-          bank: "Banco Santander · Larissa Fontana Nutrição",
-          address: "Vila Olímpia Corporate · Rua Funchal, 418 — Conj. 82",
-          addressMapQuery: "Rua+Funchal,+418+-+Vila+Olímpia,+São+Paulo+-+SP",
-          district: "Vila Olímpia · SP",
-          neighborhoodNotes: "Edifício AAA com valet e café orgânico no lobby · A 400m da Estação Vila Olímpia",
-          accentColor: "sage",
-          aboutHeader: "Sobre Mim & Formação em Nutrição",
-          aboutSubtitle: "11+ anos em nutrição clínica funcional e integrativa",
-          aboutTexts: [
-            "Graduada em Nutrição pela <strong>Universidade de São Paulo (USP)</strong>, com especialização em Nutrição Clínica Funcional e mestrado em Ciências da Saúde pela <strong>Faculdade de Medicina da USP (FMUSP)</strong>.",
-            "Minha conduta clínica prioriza a reprogramação metabólica sustentável, o emagrecimento consciente sem dietas punitivas, a restauração da barreira intestinal e a nutrição de precisão adaptada à sua rotina profissional."
-          ],
-          metrics: [
-            { title: "3.500+ Pacientes", subtitle: "Acompanhados com sucesso" },
-            { title: "Bioimpedância InBody", subtitle: "Avaliação corporal avançada" }
-          ],
-          services: [
-            {
-              title: "Consulta Nutricional Individualizada",
-              description: "Rastreamento metabólico, bioimpedância e plano alimentar 100% sob medida",
-              icon: "apple",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20a%20Consulta%20Nutricional.",
-              badge: "Mais Buscado"
-            },
-            {
-              title: "Protocolo Longevidade & Saúde Intestinal",
-              description: "Modulação da microbiota, redução de inflamação e equilíbrio hormonal",
-              icon: "sparkles",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Protocolo%20de%20Sa%C3%BAde%20Intestinal%20e%20Longevidade.",
-              badge: "Exclusivo"
-            },
-            {
-              title: "E-book: Receitas Funcionais de Alta Densidade",
-              description: "Guia prático com 60 preparações anti-inflamatórias rápidas para o dia a dia",
-              icon: "book-open",
-              link: "https://wa.me/5511998765432?text=Ol%C3%A1!%20Gostaria%20de%20adquirir%20o%20Guia%20de%20Receitas%20Funcionais.",
-              badge: "Guia Digital"
-            },
-            {
-              title: "Coluna de Nutrição Integrativa",
-              description: "Ensaios sobre crononutrição, sono reparador e suplementação inteligente",
-              icon: "newspaper",
-              link: "https://medium.com",
-              badge: "Artigos"
-            }
-          ],
-          ethicsTitle: "Compromisso Ético & Individualidade Bioquímica",
-          ethicsText: "Atendimento estritamente regulamentado pelo Código de Ética do Nutricionista (CFN). Respeito à sua singularidade, preferências gastronômicas, exames laboratoriais e metas de saúde.",
-          footer: "Dra. Larissa Fontana · Nutrição Clínica & Funcional (CRN-3 48.912)"
-        }
-      };
-
-      let currentNiche = 'psychology';
-
-      // ==========================================
-      // CONTROLE DO MENU SUSPENSO DE PROFISSÕES
-      // ==========================================
-      function toggleNicheDropdown() {
-        const menu = document.getElementById('nicheDropdownMenu');
-        const chevron = document.getElementById('nicheChevron');
-        const btn = document.getElementById('nicheDropdownBtn');
-        if (!menu) return;
-
-        const isHidden = menu.classList.contains('hidden');
-        if (isHidden) {
-          menu.classList.remove('hidden');
-          if (chevron) chevron.classList.add('rotate-180');
-          if (btn) btn.setAttribute('aria-expanded', 'true');
-        } else {
-          closeNicheDropdown();
-        }
-      }
-
-      function closeNicheDropdown() {
-        const menu = document.getElementById('nicheDropdownMenu');
-        const chevron = document.getElementById('nicheChevron');
-        const btn = document.getElementById('nicheDropdownBtn');
-        if (menu && !menu.classList.contains('hidden')) {
-          menu.classList.add('hidden');
-          if (chevron) chevron.classList.remove('rotate-180');
-          if (btn) btn.setAttribute('aria-expanded', 'false');
-        }
-      }
-
-      function selectNicheFromDropdown(nicheKey) {
-        closeNicheDropdown();
-        switchNiche(nicheKey);
-      }
-
-      function updateNicheUI() {
-        const label = document.getElementById('currentNicheLabel');
-        const icon = document.getElementById('currentNicheIcon');
-        
-        const nicheMeta = {
-          psychology: { label: 'Psicologia', icon: 'brain' },
-          law: { label: 'Advocacia', icon: 'scale' },
-          nutrition: { label: 'Nutrição', icon: 'apple' }
-        };
-
-        const current = nicheMeta[currentNiche] || nicheMeta.psychology;
-        if (label) label.textContent = current.label;
-        if (icon) icon.setAttribute('data-lucide', current.icon);
-
-        // Checkmarks e destaques no menu suspenso
-        const checkPsych = document.getElementById('checkPsych');
-        const checkLaw = document.getElementById('checkLaw');
-        const checkNutri = document.getElementById('checkNutri');
-
-        if (checkPsych) checkPsych.classList.toggle('hidden', currentNiche !== 'psychology');
-        if (checkLaw) checkLaw.classList.toggle('hidden', currentNiche !== 'law');
-        if (checkNutri) checkNutri.classList.toggle('hidden', currentNiche !== 'nutrition');
-
-        const itemPsych = document.getElementById('itemPsych');
-        const itemLaw = document.getElementById('itemLaw');
-        const itemNutri = document.getElementById('itemNutri');
-
-        [
-          { el: itemPsych, key: 'psychology' },
-          { el: itemLaw, key: 'law' },
-          { el: itemNutri, key: 'nutrition' }
-        ].forEach(({ el, key }) => {
-          if (!el) return;
-          if (currentNiche === key) {
-            el.classList.add('bg-stone-100/90', 'dark:bg-white/10');
-          } else {
-            el.classList.remove('bg-stone-100/90', 'dark:bg-white/10');
-          }
-        });
-
-        // Reinicializar ícones
-        if (window.lucide) {
-          lucide.createIcons();
-        }
-      }
-
-      // Fechar menu suspenso ao clicar fora
-      document.addEventListener('click', function(event) {
-        const container = document.getElementById('nicheDropdownContainer');
-        if (container && !container.contains(event.target)) {
-          closeNicheDropdown();
-        }
-      });
-
-      // ==========================================
-      // RENDERIZAR PERFIL ATIVO
-      // ==========================================
-      function renderProfile(nicheKey) {
-        currentNiche = nicheKey;
-        const data = PROFILES[nicheKey];
-
-        // Atualizar textos e imagens principais
-        document.getElementById('profileName').textContent = data.name;
-        document.getElementById('profileSpecialty').textContent = data.title;
-        document.getElementById('profileRegistry').innerHTML = `
-          <span>${data.registry.split('·')[0].trim()}</span>
-          <span aria-hidden="true" class="text-stone-300 dark:text-stone-600">·</span>
-          <span>${data.registry.split('·')[1]?.trim() || ''}</span>
-        `;
-        document.getElementById('profileBio').textContent = data.bio;
-        document.getElementById('profileAvatar').src = data.avatar;
-        document.getElementById('profileStatus').textContent = data.status;
-
-        // Atualizar Contato e Pix
-        document.getElementById('pixKeyText').textContent = data.pixKey;
-        document.getElementById('pixBankName').textContent = data.bank;
-        document.getElementById('socialEmail').href = `mailto:${data.email}`;
-
-        // Atualizar Localização
-        document.getElementById('officeDistrict').textContent = data.district;
-        document.getElementById('officeAddress').textContent = data.address;
-        document.getElementById('officeNotes').textContent = data.neighborhoodNotes;
-        document.getElementById('mapsLink').href = `https://maps.google.com/?q=${data.addressMapQuery}`;
-
-        // Atualizar Seção Sobre
-        document.getElementById('aboutHeaderTitle').textContent = data.aboutHeader;
-        document.getElementById('aboutHeaderSubtitle').textContent = data.aboutSubtitle;
-        
-        const aboutDetailsEl = document.getElementById('aboutTextDetails');
-        aboutDetailsEl.innerHTML = data.aboutTexts.map(t => `<p class="leading-relaxed">${t}</p>`).join('');
-
-        const aboutMetricsEl = document.getElementById('aboutMetrics');
-        aboutMetricsEl.innerHTML = data.metrics.map(m => `
-          <div class="p-2 rounded-xl bg-stone-50 dark:bg-white/5 border border-stone-200/60 dark:border-white/10 transition-colors">
-            <span class="block font-bold text-graphite-800 dark:text-stone-100">${m.title}</span>
-            <span class="text-stone-500 dark:text-stone-400">${m.subtitle}</span>
-          </div>
-        `).join('');
-
-        // Renderizar Lista de Serviços com suporte total a alto contraste
-        const servicesContainer = document.getElementById('servicesContainer');
-        servicesContainer.innerHTML = data.services.map(svc => `
-          <a
-            href="${svc.link}"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-          >
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-xl bg-stone-100/90 dark:bg-white/5 border border-stone-200 dark:border-white/10 text-stone-700 dark:text-champagne-300 flex items-center justify-center group-hover:bg-graphite-900 dark:group-hover:bg-champagne-500 group-hover:text-white dark:group-hover:text-stone-950 transition-colors shrink-0">
-                <i data-lucide="${svc.icon}" class="w-5 h-5"></i>
-              </div>
-              <div class="text-left">
-                <div class="flex items-center gap-2">
-                  <h3 class="font-serif-luxury text-base font-bold text-graphite-900 dark:text-stone-100 group-hover:text-champagne-700 dark:group-hover:text-champagne-300 transition-colors">
-                    ${svc.title}
-                  </h3>
-                </div>
-                <p class="text-[11px] text-stone-500 dark:text-stone-400 leading-snug">
-                  ${svc.description}
-                </p>
-              </div>
-            </div>
-            <div class="flex items-center gap-2 shrink-0">
-              <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-500 font-medium">${svc.badge}</span>
-              <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 dark:text-stone-500 group-hover:text-champagne-600 dark:group-hover:text-champagne-300 transition-colors"></i>
-            </div>
-          </a>
-        `).join('');
-
-        // Ética & Footer
-        document.getElementById('ethicsHeader').textContent = data.ethicsTitle;
-        document.getElementById('ethicsText').textContent = data.ethicsText;
-        document.getElementById('footerTitle').textContent = data.name;
-        document.getElementById('footerRegistry').textContent = data.registry;
-
-        // Atualizar QR Code URL
-        document.getElementById('qrCodeImage').src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${encodeURIComponent(window.location.href)}&color=1a1b1c&bgcolor=ffffff`;
-
-        // Detalhes CTA e Modalidades
-        const modalitySelect = document.getElementById('bookingModality');
-        if (nicheKey === 'psychology') {
-          document.getElementById('ctaDetails').textContent = "Atendimento online ou presencial nos Jardins";
-          if (modalitySelect) {
-            modalitySelect.innerHTML = `
-              <option value="Psicoterapia Online">Psicoterapia Online</option>
-              <option value="Presencial nos Jardins">Atendimento Presencial nos Jardins (SP)</option>
-              <option value="Protocolo Ansiedade & Burnout">Protocolo Ansiedade & Burnout</option>
-            `;
-          }
-        } else if (nicheKey === 'law') {
-          document.getElementById('ctaDetails').textContent = "Reunião de alinhamento estratégico via WhatsApp";
-          if (modalitySelect) {
-            modalitySelect.innerHTML = `
-              <option value="Consultoria Societária">Consultoria Societária & M&A</option>
-              <option value="Planejamento Patrimonial">Planejamento Sucessório & Patrimonial</option>
-              <option value="Parecer Jurídico">Parecer Jurídico & Compliance</option>
-            `;
-          }
-        } else {
-          document.getElementById('ctaDetails').textContent = "Consulta presencial na Vila Olímpia ou online";
-          if (modalitySelect) {
-            modalitySelect.innerHTML = `
-              <option value="Consulta Nutricional Online">Consulta Nutricional Online</option>
-              <option value="Presencial Vila Olímpia">Atendimento Presencial na Vila Olímpia (SP)</option>
-              <option value="Protocolo Longevidade & Intestino">Protocolo Longevidade & Saúde Intestinal</option>
-            `;
-          }
-        }
-
-        const ctaCard = document.getElementById('mainCtaCard');
-        if (ctaCard) {
-          ctaCard.href = `https://wa.me/${data.whatsapp}?text=${encodeURIComponent("Olá, " + data.name + "! Gostaria de informações sobre agendamento de consulta.")}`;
-        }
-
-        updateNicheUI();
-
-        // Reinicializar ícones Lucide
-        if (window.lucide) {
-          lucide.createIcons();
-        }
-      }
-
-      function switchNiche(nicheKey) {
-        renderProfile(nicheKey);
-        const labels = {
-          psychology: 'Psicologia Clínica',
-          law: 'Advocacia Estratégica',
-          nutrition: 'Nutrição Clínica & Longevidade'
-        };
-        showToast(`Exibindo perfil: ${labels[nicheKey] || nicheKey}`);
-      }
-
-      // ==========================================
-      // SISTEMA DE TOAST NOTIFICAÇÃO
+      // SISTEMA DE NOTIFICAÇÃO TOAST
       // ==========================================
       let toastTimeout = null;
       function showToast(message, duration = 2600) {
@@ -1307,48 +1090,46 @@
       // COPIAR CHAVE PIX
       // ==========================================
       function copyPixKey() {
-        const key = PROFILES[currentNiche].pixKey;
-        navigator.clipboard.writeText(key).then(() => {
+        const pixKey = "62999398040";
+        navigator.clipboard.writeText(pixKey).then(() => {
           const btnText = document.getElementById('pixCopyBtnText');
           const btn = document.getElementById('copyPixBtn');
           
           btnText.innerText = "Copiado!";
-          btn.classList.add('bg-emerald-600', 'hover:bg-emerald-700', 'text-white');
-          btn.classList.remove('bg-champagne-500', 'hover:bg-champagne-600', 'dark:bg-champagne-500', 'dark:text-stone-950');
+          btn.classList.add('bg-emerald-500', 'text-white');
+          btn.classList.remove('bg-gold-500', 'text-stone-950');
 
           showToast("Chave Pix copiada com sucesso!");
-
           if (navigator.vibrate) navigator.vibrate(40);
 
           setTimeout(() => {
             btnText.innerText = "Copiar";
-            btn.classList.remove('bg-emerald-600', 'hover:bg-emerald-700', 'text-white');
-            btn.classList.add('bg-champagne-500', 'hover:bg-champagne-600', 'dark:bg-champagne-500', 'dark:text-stone-950');
+            btn.classList.remove('bg-emerald-500', 'text-white');
+            btn.classList.add('bg-gold-500', 'text-stone-950');
           }, 2400);
         }).catch(() => {
-          showToast(`Chave Pix: ${key}`);
+          showToast(`Chave Pix: ${pixKey}`);
         });
       }
 
       // ==========================================
-      // COPIAR ENDEREÇO DO CONSULTÓRIO
+      // COPIAR ENDEREÇO
       // ==========================================
       function copyAddress() {
-        const address = PROFILES[currentNiche].address;
-        navigator.clipboard.writeText(address).then(() => {
+        navigator.clipboard.writeText(ELIENE_DATA.address).then(() => {
           const textSpan = document.getElementById('copyAddressText');
           textSpan.innerText = "Copiado!";
           showToast("Endereço copiado para a área de transferência!");
           if (navigator.vibrate) navigator.vibrate(30);
 
           setTimeout(() => {
-            textSpan.innerText = "Copiar Endereço";
+            textSpan.innerText = "Copiar";
           }, 2400);
         });
       }
 
       // ==========================================
-      // ACORDEOM RETRÁTIL SOBRE
+      // ACORDEOM SOBRE MIM
       // ==========================================
       let isAboutOpen = false;
       function toggleAboutAccordion(forceOpen = null) {
@@ -1377,10 +1158,9 @@
       // COMPARTILHAR PERFIL
       // ==========================================
       function shareProfile() {
-        const profile = PROFILES[currentNiche];
         const shareData = {
-          title: `${profile.name} | ${profile.title}`,
-          text: `Acesse o canal de atendimento e links profissionais de ${profile.name}:`,
+          title: "Eliene Matos | Estética Avançada & Cuidados Capilares",
+          text: "Acesse os links oficiais e canal de agendamento de Eliene Matos:",
           url: window.location.href,
         };
 
@@ -1397,18 +1177,17 @@
       // DOWNLOAD DO CARTÃO DE VISITA (vCard .vcf)
       // ==========================================
       function downloadVCard() {
-        const profile = PROFILES[currentNiche];
         const vcardData = [
           "BEGIN:VCARD",
           "VERSION:3.0",
-          `FN:${profile.name}`,
-          `TITLE:${profile.title}`,
-          `ORG:${profile.title}`,
-          `TEL;TYPE=CELL,VOICE:+${profile.whatsapp}`,
-          `EMAIL;TYPE=PREF,INTERNET:${profile.email}`,
-          `ADR;TYPE=WORK:;;${profile.address};São Paulo;SP;;Brasil`,
+          "FN:Eliene Matos",
+          "TITLE:Esteticista e Cabeleireira Especialista",
+          "ORG:Eliene Mattos Estética",
+          "TEL;TYPE=CELL,VOICE:+5562999398040",
+          "EMAIL;TYPE=PREF,INTERNET:elienemattosestetica@gmail.com",
+          "ADR;TYPE=WORK:;;Rua 32-A, 453;Goiânia;GO;74075-220;Brasil",
           `URL:${window.location.href}`,
-          `NOTE:${profile.registry} - ${profile.bio}`,
+          "NOTE:Mais de 26 anos transformando a beleza e a autoestima feminina. Atendimento com hora marcada.",
           "END:VCARD"
         ].join("\r\n");
 
@@ -1416,7 +1195,7 @@
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.setAttribute("download", `${profile.name.replace(/\s+/g, '_')}.vcf`);
+        link.setAttribute("download", "Eliene_Matos_Estetica.vcf");
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -1426,11 +1205,13 @@
       }
 
       // ==========================================
-      // MODAIS (QR Code e WhatsApp Builder)
+      // MODAL DE QR CODE
       // ==========================================
       function toggleQRModal(show) {
         const modal = document.getElementById('qrModal');
         if (show) {
+          const qrImg = document.getElementById('qrCodeImage');
+          qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(window.location.href)}&color=0a0c0e&bgcolor=ffffff`;
           modal.classList.remove('hidden');
           modal.classList.add('flex');
         } else {
@@ -1439,6 +1220,9 @@
         }
       }
 
+      // ==========================================
+      // MODAL DE AGENDAMENTO NO WHATSAPP
+      // ==========================================
       function openBookingModal() {
         const modal = document.getElementById('bookingModal');
         modal.classList.remove('hidden');
@@ -1453,13 +1237,12 @@
 
       function handleSendWhatsApp(event) {
         event.preventDefault();
-        const profile = PROFILES[currentNiche];
         const name = document.getElementById('bookingClientName').value.trim();
-        const modality = document.getElementById('bookingModality').value;
-        const shift = document.querySelector('input[name="shift"]:checked')?.value || "qualquer horário";
+        const service = document.getElementById('bookingService').value;
+        const shift = document.querySelector('input[name="shift"]:checked')?.value || "Manhã";
 
-        const message = `Olá, ${profile.name}! Meu nome é ${name}. Gostaria de informações sobre disponibilidade para agendamento de consulta na modalidade "${modality}" (preferência pelo período da ${shift}).`;
-        const whatsappUrl = `https://wa.me/${profile.whatsapp}?text=${encodeURIComponent(message)}`;
+        const message = `Olá, Eliene! Meu nome é ${name}. Vim pelo seu Link da Bio e gostaria de verificar disponibilidade de horário para o procedimento "${service}" (preferência pelo período da ${shift}).`;
+        const whatsappUrl = `https://wa.me/${ELIENE_DATA.whatsapp}?text=${encodeURIComponent(message)}`;
 
         closeBookingModal();
         window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
@@ -1468,7 +1251,9 @@
       // Inicialização
       document.addEventListener('DOMContentLoaded', () => {
         initTheme();
-        renderProfile('psychology');
+        if (window.lucide) {
+          lucide.createIcons();
+        }
       });
     </script>
   </body>

@@ -1,6 +1,6 @@
 {
-  "name": "Dra. Helena Vasconcellos | Bio & Links Profissionais",
-  "description": "Centralizador de links e bio profissional de alto padrão para profissionais liberais, com agendamento via WhatsApp, serviços clínicos, sobre e chave Pix.",
+  "name": "Eliene Matos | Estética & Cuidados Capilares",
+  "description": "Centralizador de links e bio profissional de alto padrão para a esteticista e cabeleireira Eliene Matos em Goiânia - GO. Agendamento via WhatsApp, tratamentos faciais e capilares, endereço e horários.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": []
 }
