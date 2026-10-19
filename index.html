@@ -6,7 +6,7 @@
     <title>Eliene Matos | Estética Avançada & Cuidados Capilares</title>
     <meta
       name="description"
-      content="Bio e links oficiais de Eliene Matos. Esteticista e Cabeleireira em Goiânia - GO com mais de 26 anos de experiência. Agendamentos via WhatsApp, tratamentos faciais, terapia capilar, localização e horários."
+      content="Bio e links oficiais de Eliene Matos. Esteticista e Cabeleireira em Goiânia - GO com mais de 26 anos de experiência. Tratamentos capilares (escova, cronograma capilar, mechas, luzes, realinhamento, botox, detox, corte unissex, penteados) e corporais (epilação com cera, design de sobrancelha, massagens, drenagem linfática, manicure e maquiagem)."
     />
     <meta property="og:title" content="Eliene Matos | Estética Avançada & Cuidados Capilares" />
     <meta
@@ -438,8 +438,8 @@
           </section>
 
           <!-- 3. LISTA DE SERVIÇOS & PROCEDIMENTOS OFICIAIS -->
-          <section class="w-full space-y-2.5 mb-5" aria-label="Serviços Oficiais de Eliene Matos">
-            <div class="flex items-center justify-between px-1 mb-1">
+          <section id="servicesSection" class="w-full space-y-3 mb-5" aria-label="Serviços Oficiais de Eliene Matos">
+            <div class="flex items-center justify-between px-1 mb-0.5">
               <h2 class="text-[11px] font-bold uppercase tracking-widest text-stone-500 dark:text-gold-400/90 flex items-center gap-1.5">
                 <i data-lucide="sparkle" class="w-3.5 h-3.5 text-gold-400"></i>
                 Procedimentos & Tratamentos
@@ -447,215 +447,506 @@
               <span class="text-[10px] text-stone-400 dark:text-stone-400">Hora Marcada</span>
             </div>
 
-            <!-- Serviço 1: Limpeza de Pele Profunda -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20agendamento%20para%20a%20Limpeza%20de%20Pele%20Profunda."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="sparkles" class="w-5 h-5"></i>
-                </div>
-                <div class="text-left">
-                  <div class="flex items-center gap-2">
-                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                      Limpeza de Pele Profunda & Peeling
-                    </h3>
+            <!-- Abas de Filtro de Categoria -->
+            <div class="flex items-center gap-1.5 p-1 bg-stone-100/80 dark:bg-white/5 rounded-xl border border-stone-200/70 dark:border-white/10 text-xs">
+              <button
+                type="button"
+                onclick="filterServices('all')"
+                id="filterTab-all"
+                class="filter-tab-btn flex-1 py-1.5 px-2 rounded-lg font-semibold text-[11px] transition-all cursor-pointer bg-gold-500 text-stone-950 shadow-xs"
+              >
+                Todos (16)
+              </button>
+              <button
+                type="button"
+                onclick="filterServices('capilar')"
+                id="filterTab-capilar"
+                class="filter-tab-btn flex-1 py-1.5 px-2 rounded-lg font-medium text-[11px] text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white transition-all cursor-pointer"
+              >
+                Capilares (9)
+              </button>
+              <button
+                type="button"
+                onclick="filterServices('corporal')"
+                id="filterTab-corporal"
+                class="filter-tab-btn flex-1 py-1.5 px-2 rounded-lg font-medium text-[11px] text-stone-600 dark:text-stone-300 hover:text-stone-900 dark:hover:text-white transition-all cursor-pointer"
+              >
+                Corporais (7)
+              </button>
+            </div>
+
+            <!-- CATEGORIA 1: TRATAMENTOS CAPILARES (9 SERVIÇOS) -->
+            <div id="category-capilar" class="service-category space-y-2.5">
+              <div class="flex items-center gap-2 px-1 pt-1 pb-0.5" id="capilarHeaderDivider">
+                <div class="h-px bg-gold-400/25 flex-1"></div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-gold-700 dark:text-gold-300 flex items-center gap-1.5 bg-gold-400/10 px-2.5 py-0.5 rounded-full border border-gold-400/25">
+                  <i data-lucide="sparkles" class="w-3 h-3 text-gold-500"></i>
+                  Tratamentos Capilares (9)
+                </span>
+                <div class="h-px bg-gold-400/25 flex-1"></div>
+              </div>
+
+              <!-- 1. Escova -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20Escova."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="wind" class="w-5 h-5"></i>
                   </div>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Extração criteriosa sem dor, alta frequência e revitalização celular com dermocosméticos
-                  </p>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Escova
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Modelagem impecável, alinhamento dos fios, brilho radiante e toque sedoso
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-gold-600 dark:text-gold-300 font-semibold px-2 py-0.5 rounded-full bg-gold-400/15">Mais Pedido</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-gold-600 dark:text-gold-300 font-semibold px-2 py-0.5 rounded-full bg-gold-400/15">Brilho</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
 
-            <!-- Serviço 2: Design de Sobrancelha & Micropigmentação -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20Design%20de%20Sobrancelhas%20%2F%20Micropigmenta%C3%A7%C3%A3o."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="eye" class="w-5 h-5"></i>
+              <!-- 2. Cronograma Capilar -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Cronograma%20Capilar%20(hidrata%C3%A7%C3%A3o%2C%20nutri%C3%A7%C3%A3o%2C%20reconstru%C3%A7%C3%A3o)."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="droplets" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Cronograma Capilar
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Hidratação, nutrição e reconstrução profunda para saúde completa dos fios
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                    Design de Sobrancelhas & Micropigmentação
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Visagismo facial e harmonização do olhar com técnica personalizada e natural
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-gold-600 dark:text-gold-300 font-semibold px-2 py-0.5 rounded-full bg-gold-400/15">Completo</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Olhar</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+              </a>
 
-            <!-- Serviço 3: Terapia Capilar & Reestruturação -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20de%20Terapia%20Capilar%20e%20Reestrutura%C3%A7%C3%A3o%20dos%20Fios."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-emeraldBrand-500/15 border border-emeraldBrand-500/30 text-emerald-600 dark:text-emerald-300 flex items-center justify-center group-hover:bg-emeraldBrand-600 group-hover:text-white transition-colors shrink-0">
-                  <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+              <!-- 3. Penteados -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20consultar%20hor%C3%A1rios%20para%20Penteados."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="crown" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Penteados
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Produções exclusivas para festas, casamentos e ocasiões especiais
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
-                    Terapia Capilar & Reestruturação
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Saúde do couro cabeludo, reposição de massa, combate à quebra e brilho espelhado
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Eventos</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-emerald-600 dark:text-emerald-300 font-semibold px-2 py-0.5 rounded-full bg-emeraldBrand-500/15">Capilar</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-emerald-400 transition-colors"></i>
-              </div>
-            </a>
+              </a>
 
-            <!-- Serviço 4: Mechas & Loiros de Alto Padrão -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Tenho%20interesse%20em%20fazer%20Mechas%20%2F%20Loiro%20Personalizado."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="sun-medium" class="w-5 h-5"></i>
+              <!-- 4. Mechas -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20Mechas."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="sun-medium" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Mechas
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Técnicas personalizadas de iluminação com máxima proteção da fibra capilar
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                    Loiros Saudáveis & Mechas Iluminadas
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Colorimetria avançada com proteção absoluta da integridade da fibra capilar
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Iluminação</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Loiros</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+              </a>
 
-            <!-- Serviço 5: Cortes Personalizados & Visagismo -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20Corte%20Feminino%20Personalizado."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="scissors" class="w-5 h-5"></i>
+              <!-- 5. Luzes -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20Luzes."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Luzes
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Clareamento harmônico e distribuído com sutileza, brilho e tom sob medida
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                    Cortes Femininos & Alinhamento de Pontas
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Cortes que valorizam o movimento natural, o caimento e o seu estilo único
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Nuances</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Visagismo</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+              </a>
 
-            <!-- Serviço 6: Mega Hair & Alongamento -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Mega%20Hair%20e%20Alongamento."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="wand-2" class="w-5 h-5"></i>
+              <!-- 6. Realinhamento Capilar -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20e%20agendamento%20para%20Realinhamento%20Capilar."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="wand-2" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Realinhamento Capilar
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Fios naturalmente alinhados, redução de volume e frizz com brilho espelhado
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                    Mega Hair & Preenchimento de Pontas
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Extensão capilar segura com acabamento imperceptível e volume deslumbrante
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-gold-600 dark:text-gold-300 font-semibold px-2 py-0.5 rounded-full bg-gold-400/15">Zero Frizz</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Volume</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+              </a>
 
-            <!-- Serviço 7: Depilação Feminina -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20Depila%C3%A7%C3%A3o%20Feminina."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="feather" class="w-5 h-5"></i>
+              <!-- 7. Botox -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20Botox%20Capilar."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="shield-check" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Botox Capilar
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Reposição intensiva de massa, selagem das cutículas e rejuvenescimento capilar
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                    Depilação Feminina com Biossegurança
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Higiene rigorosa, método suave e protocolo pós-depilatório calmante
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Massa</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
                 </div>
-              </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Suavidade</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+              </a>
 
-            <!-- Serviço 8: Spa dos Pés & Manicure -->
-            <a
-              href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20Spa%20dos%20P%C3%A9s%20%2F%20Manicure."
-              target="_blank"
-              rel="noopener noreferrer"
-              class="glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
-            >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
-                  <i data-lucide="smile" class="w-5 h-5"></i>
+              <!-- 8. Detox -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20procedimento%20de%20Detox%20Capilar."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-emeraldBrand-500/15 border border-emeraldBrand-500/30 text-emerald-600 dark:text-emerald-300 flex items-center justify-center group-hover:bg-emeraldBrand-600 group-hover:text-white transition-colors shrink-0">
+                    <i data-lucide="leaf" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
+                      Detox Capilar
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Desintoxicação do couro cabeludo, controle da oleosidade e estímulo aos folículos
+                    </p>
+                  </div>
                 </div>
-                <div class="text-left">
-                  <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
-                    Spa dos Pés & Cuidados Especiais
-                  </h3>
-                  <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
-                    Esfoliação relaxante, renovação da maciez e hidratação nutritiva profunda
-                  </p>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-emerald-600 dark:text-emerald-300 font-semibold px-2 py-0.5 rounded-full bg-emeraldBrand-500/15">Couro Cabeludo</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-emerald-400 transition-colors"></i>
                 </div>
+              </a>
+
+              <!-- 9. Corte Unissex -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20Corte%20Unissex."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card capilar-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="scissors" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Corte Unissex
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Cortes femininos e masculinos com visagismo, leveza e caimento impecável
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Visagismo</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- CATEGORIA 2: TRATAMENTOS CORPORAIS (7 SERVIÇOS) -->
+            <div id="category-corporal" class="service-category space-y-2.5 pt-2">
+              <div class="flex items-center gap-2 px-1 pt-1 pb-0.5" id="corporalHeaderDivider">
+                <div class="h-px bg-emeraldBrand-500/25 flex-1"></div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5 bg-emeraldBrand-500/10 px-2.5 py-0.5 rounded-full border border-emeraldBrand-500/25">
+                  <i data-lucide="sparkles" class="w-3 h-3 text-emerald-500"></i>
+                  Tratamentos Corporais (7)
+                </span>
+                <div class="h-px bg-emeraldBrand-500/25 flex-1"></div>
               </div>
-              <div class="flex items-center gap-2 shrink-0">
-                <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Spa</span>
-                <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
-              </div>
-            </a>
+
+              <!-- 1. Epilação com cera -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20Epila%C3%A7%C3%A3o%20com%20Cera."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="feather" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Epilação com Cera
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Método suave, biossegurança rigorosa e cuidado pós-epilatório para pele macia
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Pele Macia</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+
+              <!-- 2. Design de Sobrancelha -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20Design%20de%20Sobrancelha."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="eye" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Design de Sobrancelha
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Visagismo e harmonização do olhar respeitando suas linhas e expressões faciais
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Olhar</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+
+              <!-- 3. Massagem Relaxante -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20uma%20Massagem%20Relaxante."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="heart" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Massagem Relaxante
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Alívio do estresse diário, liberação de pontos de tensão e renovação física e mental
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-gold-600 dark:text-gold-300 font-semibold px-2 py-0.5 rounded-full bg-gold-400/15">Bem-Estar</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+
+              <!-- 4. Drenagem Linfática -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Drenagem%20Linf%C3%A1tica."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-emeraldBrand-500/15 border border-emeraldBrand-500/30 text-emerald-600 dark:text-emerald-300 flex items-center justify-center group-hover:bg-emeraldBrand-600 group-hover:text-white transition-colors shrink-0">
+                    <i data-lucide="waves" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 transition-colors">
+                      Drenagem Linfática
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Estímulo linfático, redução do inchaço, desintoxicação e alívio da retenção
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-emerald-600 dark:text-emerald-300 font-semibold px-2 py-0.5 rounded-full bg-emeraldBrand-500/15">Desinchaço</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-emerald-400 transition-colors"></i>
+                </div>
+              </a>
+
+              <!-- 5. Massagem Modeladora -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20uma%20sess%C3%A3o%20de%20Massagem%20Modeladora."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Massagem Modeladora
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Manobras vigorosas e ritmadas para remodelagem de curvas e tônus corporal
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Contorno</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+
+              <!-- 6. Maquiagem -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20para%20Maquiagem."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="palette" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Maquiagem
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Beleza realçada com técnica profissional, acabamento sofisticado e alta fixação
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Festas</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+
+              <!-- 7. Embelezamento de Mãos e Pés (Manicure) -->
+              <a
+                href="https://wa.me/5562999398040?text=Ol%C3%A1%2C%20Eliene!%20Gostaria%20de%20agendar%20Embelezamento%20de%20M%C3%A3os%20e%20P%C3%A9s%20(Manicure)."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="service-card corporal-card glass-card group flex items-center justify-between p-3.5 rounded-2xl shadow-xs transition-all duration-200"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-10 h-10 rounded-xl bg-gold-400/10 dark:bg-gold-400/10 border border-gold-400/30 text-gold-600 dark:text-gold-300 flex items-center justify-center group-hover:bg-gold-500 group-hover:text-stone-950 transition-colors shrink-0">
+                    <i data-lucide="sparkle" class="w-5 h-5"></i>
+                  </div>
+                  <div class="text-left">
+                    <h3 class="font-serif-luxury text-base font-bold text-stone-900 dark:text-stone-100 group-hover:text-gold-600 dark:group-hover:text-gold-300 transition-colors">
+                      Embelezamento de Mãos e Pés (Manicure)
+                    </h3>
+                    <p class="text-[11px] text-stone-500 dark:text-stone-300 leading-snug">
+                      Cuidado completo com unhas, cuticulagem segura, hidratação e esmaltação elegante
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span class="hidden sm:inline-block text-[10px] text-stone-400 dark:text-stone-400">Manicure</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-stone-400 group-hover:text-gold-400 transition-colors"></i>
+                </div>
+              </a>
+            </div>
+
+            <!-- Botão Elegante Expandir / Recolher Catálogo de Serviços -->
+            <div class="pt-1 w-full" id="expandServicesContainer">
+              <button
+                type="button"
+                id="toggleExpandServicesBtn"
+                onclick="toggleServicesExpansion()"
+                class="w-full py-3 px-4 rounded-2xl bg-gradient-to-r from-gold-500/15 via-gold-400/25 to-gold-500/15 hover:from-gold-500/25 hover:via-gold-400/35 hover:to-gold-500/25 dark:from-gold-400/10 dark:via-gold-400/20 dark:to-gold-400/10 dark:hover:from-gold-400/20 dark:hover:via-gold-400/30 dark:hover:to-gold-400/20 border border-gold-400/35 hover:border-gold-400/60 text-stone-900 dark:text-gold-200 text-xs font-bold transition-all duration-300 flex items-center justify-between shadow-xs group cursor-pointer active:scale-[0.99]"
+                aria-expanded="false"
+              >
+                <div class="flex items-center gap-2.5">
+                  <div class="w-7 h-7 rounded-xl bg-gold-400/20 text-gold-700 dark:text-gold-300 flex items-center justify-center shrink-0 border border-gold-400/30">
+                    <i data-lucide="layers" class="w-3.5 h-3.5" id="expandBtnLeadingIcon"></i>
+                  </div>
+                  <div class="text-left">
+                    <span id="expandBtnText" class="font-bold text-xs block leading-tight text-stone-900 dark:text-gold-200">
+                      Ver catálogo completo (16 serviços)
+                    </span>
+                    <span id="expandBtnSubtext" class="text-[10px] text-stone-500 dark:text-stone-400 font-normal block">
+                      Toque para expandir todos os tratamentos
+                    </span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  <span id="expandBtnBadge" class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-gold-400/20 text-gold-700 dark:text-gold-300 border border-gold-400/30">
+                    +12 serviços
+                  </span>
+                  <div class="w-6 h-6 rounded-full bg-stone-200/50 dark:bg-white/10 flex items-center justify-center text-stone-600 dark:text-gold-300 transition-transform duration-300" id="expandBtnArrowContainer">
+                    <i data-lucide="chevron-down" id="expandBtnIcon" class="w-3.5 h-3.5 transition-transform duration-300"></i>
+                  </div>
+                </div>
+              </button>
+            </div>
           </section>
 
           <!-- 4. SOBRE MIM & TRAJETÓRIA (CARD RETRÁTIL ELEGANTE) -->
@@ -908,15 +1199,29 @@
               id="bookingService"
               class="w-full px-3 py-2 text-xs rounded-xl bg-stone-50 dark:bg-[#1A1C20] border border-stone-200 dark:border-white/10 text-stone-900 dark:text-stone-100 focus:outline-hidden focus:border-gold-500 focus:ring-1 focus:ring-gold-500"
             >
-              <option value="Limpeza de Pele Profunda">Limpeza de Pele Profunda & Peeling</option>
-              <option value="Design de Sobrancelha / Micropigmentação">Design de Sobrancelha / Micropigmentação</option>
-              <option value="Terapia Capilar & Reestruturação">Terapia Capilar & Reestruturação</option>
-              <option value="Mechas / Loiro Saudável">Mechas & Loiros de Alto Padrão</option>
-              <option value="Corte Feminino & Visagismo">Corte Feminino & Visagismo</option>
-              <option value="Mega Hair / Alongamento">Mega Hair & Alongamento</option>
-              <option value="Depilação Feminina">Depilação Feminina</option>
-              <option value="Spa dos Pés / Manicure">Spa dos Pés & Manicure</option>
-              <option value="Outro Procedimento">Outro Procedimento / Avaliação</option>
+              <optgroup label="✨ Tratamentos Capilares">
+                <option value="Escova">Escova</option>
+                <option value="Cronograma Capilar (hidratação, nutrição, reconstrução)">Cronograma Capilar (hidratação, nutrição, reconstrução)</option>
+                <option value="Penteados">Penteados</option>
+                <option value="Mechas">Mechas</option>
+                <option value="Luzes">Luzes</option>
+                <option value="Realinhamento Capilar">Realinhamento Capilar</option>
+                <option value="Botox Capilar">Botox Capilar</option>
+                <option value="Detox Capilar">Detox Capilar</option>
+                <option value="Corte Unissex">Corte Unissex</option>
+              </optgroup>
+              <optgroup label="🌿 Tratamentos Corporais">
+                <option value="Epilação com Cera">Epilação com Cera</option>
+                <option value="Design de Sobrancelha">Design de Sobrancelha</option>
+                <option value="Massagem Relaxante">Massagem Relaxante</option>
+                <option value="Drenagem Linfática">Drenagem Linfática</option>
+                <option value="Massagem Modeladora">Massagem Modeladora</option>
+                <option value="Maquiagem">Maquiagem</option>
+                <option value="Embelezamento de Mãos e Pés (Manicure)">Embelezamento de Mãos e Pés (Manicure)</option>
+              </optgroup>
+              <optgroup label="💬 Outros">
+                <option value="Outro Procedimento / Avaliação">Outro Procedimento / Avaliação</option>
+              </optgroup>
             </select>
           </div>
 
@@ -1248,9 +1553,143 @@
         window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
       }
 
+      // ==========================================
+      // CONTROLE DE SERVIÇOS (FILTRO & EXPANSÃO/RECOLHIMENTO)
+      // ==========================================
+      let currentServiceCategory = 'all'; // 'all' | 'capilar' | 'corporal'
+      let isServicesExpanded = false;
+
+      function updateServicesDisplay() {
+        const capilarCards = document.querySelectorAll('.capilar-card');
+        const corporalCards = document.querySelectorAll('.corporal-card');
+        const capilarCategory = document.getElementById('category-capilar');
+        const corporalCategory = document.getElementById('category-corporal');
+
+        const btnText = document.getElementById('expandBtnText');
+        const btnSubtext = document.getElementById('expandBtnSubtext');
+        const btnBadge = document.getElementById('expandBtnBadge');
+        const btnArrow = document.getElementById('expandBtnArrowContainer');
+        const btn = document.getElementById('toggleExpandServicesBtn');
+
+        // Limite de itens visíveis no modo compacto (recolhido):
+        // Em "all": 2 capilares + 2 corporais (total 4 cards visíveis)
+        // Em "capilar": 3 capilares visíveis
+        // Em "corporal": 3 corporais visíveis
+        const capilarVisibleLimit = isServicesExpanded ? capilarCards.length : (currentServiceCategory === 'all' ? 2 : 3);
+        const corporalVisibleLimit = isServicesExpanded ? corporalCards.length : (currentServiceCategory === 'all' ? 2 : 3);
+
+        // Seção Capilar
+        if (currentServiceCategory === 'corporal') {
+          capilarCategory.classList.add('hidden');
+        } else {
+          capilarCategory.classList.remove('hidden');
+          capilarCards.forEach((card, idx) => {
+            if (isServicesExpanded || idx < capilarVisibleLimit) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        }
+
+        // Seção Corporal
+        if (currentServiceCategory === 'capilar') {
+          corporalCategory.classList.add('hidden');
+        } else {
+          corporalCategory.classList.remove('hidden');
+          corporalCards.forEach((card, idx) => {
+            if (isServicesExpanded || idx < corporalVisibleLimit) {
+              card.classList.remove('hidden');
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+        }
+
+        // Atualização do Botão de Expansão
+        if (btn && btnText && btnBadge && btnArrow) {
+          if (isServicesExpanded) {
+            btn.setAttribute('aria-expanded', 'true');
+            btnArrow.classList.add('rotate-180');
+            if (currentServiceCategory === 'all') {
+              btnText.textContent = 'Recolher catálogo completo';
+              btnSubtext.textContent = 'Exibindo todos os 16 procedimentos';
+              btnBadge.textContent = 'Recolher';
+            } else if (currentServiceCategory === 'capilar') {
+              btnText.textContent = 'Recolher tratamentos capilares';
+              btnSubtext.textContent = 'Exibindo os 9 procedimentos';
+              btnBadge.textContent = 'Recolher';
+            } else {
+              btnText.textContent = 'Recolher tratamentos corporais';
+              btnSubtext.textContent = 'Exibindo os 7 procedimentos';
+              btnBadge.textContent = 'Recolher';
+            }
+          } else {
+            btn.setAttribute('aria-expanded', 'false');
+            btnArrow.classList.remove('rotate-180');
+            if (currentServiceCategory === 'all') {
+              btnText.textContent = 'Ver catálogo completo (16 serviços)';
+              btnSubtext.textContent = 'Toque para expandir todos os tratamentos';
+              btnBadge.textContent = '+12 serviços';
+            } else if (currentServiceCategory === 'capilar') {
+              btnText.textContent = 'Ver todos os tratamentos capilares (9)';
+              btnSubtext.textContent = 'Toque para expandir mais 6 tratamentos';
+              btnBadge.textContent = '+6 serviços';
+            } else {
+              btnText.textContent = 'Ver todos os tratamentos corporais (7)';
+              btnSubtext.textContent = 'Toque para expandir mais 4 tratamentos';
+              btnBadge.textContent = '+4 serviços';
+            }
+          }
+        }
+
+        if (window.lucide) {
+          lucide.createIcons();
+        }
+      }
+
+      function filterServices(category) {
+        currentServiceCategory = category;
+        const tabs = {
+          all: document.getElementById('filterTab-all'),
+          capilar: document.getElementById('filterTab-capilar'),
+          corporal: document.getElementById('filterTab-corporal')
+        };
+
+        const activeClasses = ['bg-gold-500', 'text-stone-950', 'font-semibold', 'shadow-xs'];
+        const inactiveClasses = ['text-stone-600', 'dark:text-stone-300', 'hover:text-stone-900', 'dark:hover:text-white', 'font-medium'];
+
+        Object.keys(tabs).forEach((key) => {
+          const tab = tabs[key];
+          if (!tab) return;
+          if (key === category) {
+            inactiveClasses.forEach((c) => tab.classList.remove(c));
+            activeClasses.forEach((c) => tab.classList.add(c));
+          } else {
+            activeClasses.forEach((c) => tab.classList.remove(c));
+            inactiveClasses.forEach((c) => tab.classList.add(c));
+          }
+        });
+
+        updateServicesDisplay();
+      }
+
+      function toggleServicesExpansion() {
+        isServicesExpanded = !isServicesExpanded;
+        updateServicesDisplay();
+
+        if (!isServicesExpanded) {
+          const section = document.getElementById('servicesSection');
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      }
+
       // Inicialização
       document.addEventListener('DOMContentLoaded', () => {
         initTheme();
+        updateServicesDisplay();
         if (window.lucide) {
           lucide.createIcons();
         }
